@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Александрович  Давыдов](https://up.htmlacademy.ru/adaptive/19/user/1346789).
-* Наставник: `Неизвестно`.
+* Наставник:[Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
