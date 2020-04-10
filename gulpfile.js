@@ -8,8 +8,10 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
+
 var gulp = require('gulp'),
    svgSprite = require('gulp-svg-sprite');
+var cheerio = require('gulp-cheerio');
 var config = {
    shape: {
 	dimension: {
@@ -59,5 +61,13 @@ gulp.task("start", gulp.series("css", "server"));
 gulp.task('svg-sprite',function(cb){
 	return gulp.src('source/img/*.svg')
 	.pipe(svgSprite(config))
+	.pipe(cheerio({
+			run: function ($) {
+				$('[fill]').removeAttr('fill');
+				$('[style]').removeAttr('style');
+			},
+			parserOptions: { xmlMode: true }
+		}))
+		// cheerio plugin create unnecessary string '>', so replace it.
 	.pipe(gulp.dest('source/sprites/'));
 });
