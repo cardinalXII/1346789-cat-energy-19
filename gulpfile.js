@@ -9,22 +9,22 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
 var gulp = require('gulp'),
-   svgSprite = require('gulp-svg-sprite');
+    svgSprite = require('gulp-svg-sprite');
 var config = {
-   shape: {
-	dimension: {
-		maxWidth: 500,
-		maxHeight: 500
-	},
-	spacing: {
-		padding: 0
-	}
-   },
-   mode: {
-	symbol:{
-	   dest: '.'
-	}
-   }
+  shape: {
+    dimension: {
+      maxWidth: 500,
+      maxHeight: 500
+    },
+      spacing: {
+        padding: 0
+      }
+  },
+  mode: {
+    symbol:{
+      dest: '.'
+    }
+  }
 };
 
 gulp.task("css", function () {
@@ -57,7 +57,7 @@ gulp.task("start", gulp.series("css", "server"));
 
 
 gulp.task('svg-sprite',function(cb){
-	return gulp.src('source/img/*.svg')
-	.pipe(svgSprite(config))
-	.pipe(gulp.dest('source/sprites/'));
+  return gulp.src('source/img/*.svg')
+  .pipe(svgSprite(config))
+  .pipe(gulp.dest('source/sprites/'));
 });
