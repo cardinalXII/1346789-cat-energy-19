@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Кэт энерджи - Программа</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+  <!--____________________________________HEADER_________________________________________-->
+  <header class="top-header">
+
+    <!--__________________LOGO_______________________-->
+    <a class="top-header__link-index" href="index.html">
+      <img class="top-header__logo" src="img/logo-mobile.svg" width="200" height="45" alt="логотип магазина кэт энерджи">
+    </a>
+
+    <!--__________________MENU_______________________-->
+    <button class="top-header__button  top-header__button--open"></button>
+
+    <ul class="top-header-menu menu-list">
+      <li class="menu-list__item"><a href="index.html">Главная</a></li>
+      <li class="menu-list__item"><a href="catalog.html">Каталог продукции</a></li>
+      <li class="menu-list__item"><a>Подбор программы</a></li>
+  </header>
+
+
+
+
+  <!--____________________________________MAIN__________________________________________-->
+  <main class="page-main">
+  <!--____________________________________Program_selection__________________________________________-->
+  <form class="data-user" method="post" action="https://echo.htmlacademy.ru">
+
+  <!--____________________________________Program_selection_program__anketa______________________________________-->
+  <section class="program__anketa">
+    <h1 class="header__title-program">Подбор программы</h1>
+
+    <p class="anketa-program--description">
+      Заполните анкету и мы подберем программу питания для вашего кота
+    </p>
+
+    <ul class="anketa">
+
+      <li class="anketa-user">
+        <lable class="anketa__user--lable">Имя:<sup>*</sup>
+          <input class="anketa__user--value" type="text" placeholder="Барсик" name="Имя:">
+        </lable>
+      </li>
+
+      <li class="anketa-user">
+        <label class="anketa__user--lable">Вес (кг):<sup>*</sup>
+          <input class="anketa__user-value" type="text" placeholder="7" name="Вес (кг):">
+        </label>
+      </li>
+
+      <li class="anketa-user">
+        <label class="anketa__user--lable">Возраст (лет):
+          <input class="anketa__user-value" type="text" placeholder="7" name="Возраст (лет):">
+        </label>
+      </li>
+    </ul>
+  </section>
+
+  <!--____________________________________Program_selection_program-select______________________________________-->
+  <section class="program-select">
+
+    <ul class="select">
+
+      <li class="select__slim">
+        <lable class="select__slim--lable">
+        <input class="select__slim--radio" type="radio" name="select__program" checked>
+          Похудение
+        </lable>
+      </li>
+
+      <li class="select__slim">
+        <lable class="select__slim--lable">
+        <input class="select__slim--radio" type="radio" name="select__program">
+          Набор массы
+        </lable>
+      </li>
+
+      <li class="select__slim">
+        <lable class="select__slim--lable">
+        <input class="select__slim--radio" type="radio" name="select__program">
+          Не знаю (Нужен ваш совет)
+        </lable>
+      </li>
+    </ul>
+  </section>
+
+  <!--____________________________________Program_selection_program-user__contact________________________________-->
+  <section class="program__anketa">
+
+    <div class="header">
+      <h2 class="program__anketa--title">Контактные данные(владельца кота)</h2>
+    </div>
+
+    <ul class="anketa">
+
+      <li class="anketa-user">
+        <lable class="anketa__user--lable">E-mail:<sup>*</sup>
+          <input class="anketa__user--value" type="text" placeholder="kuklachev@gmail.com" name="E-mail:">
+          <img src="img/icon-mail.svg" width="20" height="15">
+        </lable>
+      </li>
+
+      <li class="anketa-user">
+        <lable class="anketa__user--lable">Телефон:<sup>*</sup>
+          <input class="anketa__user--value" type="text" placeholder="8 (960) 900-60-90" name="Телефон:">
+          <img src="img/icon-phone.svg" width="20" height="20">
+        </lable>
+      </li>
+    </ul>
+  </section>
+
+  <!--____________________________________Program_selection_program-user__coment________________________________-->
+  <section class="program__anketa">
+
+    <div class="header">
+      <h2 class="program__anketa--title">Комментарий</h2>
+    </div>
+
+    <textarea class="program__coment--area" name="coment" rows="7">Расскажите обо всех повадках кота </textarea>
+  </section>
+
+  <!--____________________________________Program_selection_program-user__Additionally__________________________-->
+  <section class="program__anketa">
+
+    <div class="header">
+      <h2 class="program__anketa--title">Дополнительно</h2>
+    </div>
+
+    <ul class="select">
+
+      <li class="select__sweetener">
+        <lable class="select__slim--lable">
+        <input class="select__slim--radio" type="checkbox" name="sweetener" checked>
+          Сахарозаменитель
+        </lable>
+      </li>
+
+      <li class="select__drinking-water">
+        <lable class="select__slim--lable">
+        <input class="select__slim--radio" type="checkbox" name="drinking-water">
+          Питьевая вода
+        </lable>
+      </li>
+
+      <li class="select__milk">
+        <lable class="select__slim--lable">
+        <input class="select__slim--radio" type="checkbox" name="milk">
+          Молоко
+        </lable>
+      </li>
+
+      <li class="select__vitamins">
+        <lable class="select__slim--lable">
+        <input class="select__slim--radio" type="checkbox" name="vitamins">
+          Витамины
+        </lable>
+      </li>
+    </ul>
+  </section>
+
+  <section class="form-button">
+    <input class="button  button__name" type="submit" value="Отправить заявку">
+  </section>
+  </form>
+
+  <small class="legend">
+    <sup> *</sup> — Обязательные поля
+  </small>
+  </main>
+
+
+
+
+  <!--____________________________________FOOTER________________________________________-->
+  <footer class="page-footer">
+
+    <!--____________________________________adress__________________________________________-->
+    <section class="adres-list">
+
+      <div class="adres-list__header">
+
+        <p class="adres-list__titel">
+          приглашаем к сотрудничеству дилеров!
+        </p>
+
+        <p class="adres-list__adres">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+
+        <a class="adres-list__map" href="#">
+          <img class="adres-list__map-mini" src="img/bg-map-mobile@1x.png" alt="избражение карты с адресом: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </a>
+      </div>
+    </section>
+
+    <a class="page-footer__logo" href="#">
+
+      <!--__________________FOOTER_LOGO--image______________________-->
+      <img src="img/logo-footer.svg" width="300" height="25">
+
+    </a>
+
+    <!--_________________SOCIAL_BUTTONS______________________-->
+    <ul class="page-footer__social-list">
+      <!--_________________SOCIAL_BUTTONS--VK______________________-->
+      <li class="social__item">
+
+        <a class="social__link  social__link--vk" href="#">
+
+          <p class="visually-hidden"> Наша группа Вконтакте</p>
+
+          <img src="img/icon-vk.svg" width="20" height="20" alt="логотип вконтакте">
+
+        </a>
+      </li>
+
+      <!--_________________SOCIAL_BUTTONS--INSTA______________________-->
+      <li class="social__item">
+
+        <a class="social__link  social__link--insta" href="#">
+
+          <p class="visually-hidden"> Наша группа Инстаграм</p>
+
+          <img src="img/icon-insta.svg" width="20" height="20" alt="логотип инстаграм">
+
+        </a>
+      </li>
+
+      <!--_________________SOCIAL_BUTTONS--FB______________________-->
+      <li class="social__item">
+
+        <a class="social__link  social__link--fb" href="#">
+
+          <p class="visually-hidden"> Наша группа Фейсбук</p>
+
+          <img src="img/icon-fb.svg" width="20" height="20" alt="логотип фейсбук">
+
+        </a>
+      </li>
+    </ul>
+
+    <!--_________________COPYRIGHT______________________-->
+    <div class="copyright">
+      <p class="copyright-title">
+        HTML Academy
+      </p>
+
+      <!--__________________LOGO_HTMLACADEMY______________________-->
+      <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+
+        <img src="img/htmlacademy.svg" width="30" height="35" alt="логотип HTML- академии">
+
+      </a>
+    </div>
+  </footer>
+  </body>
+</html>
