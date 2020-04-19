@@ -1,0 +1,255 @@
+$font-size-title: 36px;
+$font-size-description:14px;
+$font-size-lable:24px;
+$font-size-profile:16px;
+$font-line-height-title: 60px;
+$font-line-height-description: 18px;
+$font-line-height-lable:24px;
+
+$color-button: rgb(104, 183, 56);
+$color-button-hover:rgb(94, 170, 47);
+$color-button-down:rgb(94, 170, 47);
+$color-text: rgb(255, 255, 255);
+
+
+.page-main{
+  display: flex;
+}
+.data-user{
+  display: flex;
+  flex-direction: column;
+}
+.program__profile{
+  display: flex;
+  flex-direction: column;
+
+  &--title{
+
+    margin: 0;
+    padding-top: 20px;
+    padding-left:20px;
+    padding-right: 30px;
+
+    font-weight: 300;
+    font-size: $font-size-title;
+    line-height: $font-line-height-title;
+    text-align: left;
+  }
+//перенести слова на строку//
+  &--lable{
+    margin: 0;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left:20px;
+    padding-right: 20px;
+
+    font-weight: 300;
+    font-size: $font-size-lable;
+    line-height: $font-line-height-lable;
+    text-align: left;
+
+    &:after{
+      content: "";
+
+      position: absolute;
+
+      width: 50px;
+      height: 6px;
+
+      background-color: rgb(104, 183, 56);
+    }
+  }
+
+  &--description{
+
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:20px;
+    padding-right: 30px;
+
+    font-weight: 300;
+    font-size: $font-size-description;
+    line-height: $font-line-height-description;
+    text-transform: uppercase;
+    text-align: left;
+
+  }
+}
+.profile{
+
+  margin: 0;
+  padding: 0;
+  padding-left:20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+
+  text-align: left;
+  font-size: $font-size-profile;
+  line-height: $font-line-height-description;
+  text-transform: uppercase;
+  &__user{
+    list-style: none;
+
+  &--lable{
+    padding-right: 10px;
+  }
+// сделать поле на вю строку//
+  &--value{
+
+    margin-bottom: 5px;
+
+    font-size: $font-size-profile;
+    line-height: $font-line-height-description;
+    text-transform: uppercase;
+  }
+  }
+}
+
+.select{
+
+  margin: 0;
+  padding-top: 20px;
+  padding-left:20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+
+  list-style: none;
+  text-align: left;
+  font-size: $font-size-profile;
+  line-height: $font-line-height-description;
+  text-transform: uppercase;
+//сделать отступ от круга//
+  &__slim--radio{
+    padding-left:20px;
+  }
+  &--add{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  & li{
+    padding-bottom: 20px;
+  }
+  }
+  &__add--lable{
+    padding-left: 15px;
+
+    font-size: 300;
+    font-size: $font-size-profile;
+    line-height: $font-line-height-description;
+
+    text-transform: uppercase;
+  }
+}
+.profil{
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+  padding-left:20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+
+  list-style: none;
+  font-weight: 300;
+  font-size: $font-size-description;
+  line-height: $font-line-height-description;
+  text-transform: uppercase;
+  text-align: left;
+
+  &__user--value{
+    margin-bottom: 5px;
+
+    font-size: $font-size-profile;
+    line-height: $font-line-height-description;
+    text-transform: uppercase;
+  }
+}
+.program__profil{
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &--title{
+    margin: 0;
+
+    padding-top: 20px;
+
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    font-weight: 300;
+    font-size: $font-size-lable;
+    line-height: $font-line-height-lable;
+    text-align: left;
+  }
+  &--coment{
+
+    font-size: $font-size-profile;
+    line-height: $font-line-height-description;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
+//удлинить//
+.comment-after{
+  &:after{
+    content: "";
+
+    position: absolute;
+
+    width: 55px;
+    height: 6px;
+
+    background-color: rgb(104, 183, 56);
+  }
+}
+.add-after{
+  &:after{
+    content: "";
+
+    position: absolute;
+
+    width: 55px;
+    height: 6px;
+
+    background-color: rgb(104, 183, 56);
+  }
+}
+.button{
+  width: 100%;
+  background-color: $color-button;
+
+
+  padding: 15px 0;
+
+  text-decoration: none;
+
+//don't work it//
+  & :hover{
+  background-color:$color-button-hover;
+  }
+  & :down{
+  background-color:$color-button-down;
+  color: rgb(153, 198, 132);
+  }
+  &--name{
+    color: $color-text;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.legend{
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(68, 68, 68);
+}
