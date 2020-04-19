@@ -33,30 +33,30 @@
   <form class="data-user" method="post" action="https://echo.htmlacademy.ru">
 
   <!--____________________________________Program_selection_program__anketa______________________________________-->
-  <section class="program__anketa">
-    <h1 class="header__title-program">Подбор программы</h1>
+  <section class="program__profile">
+    <h1 class="program__profile--title">Подбор программы</h1>
 
-    <p class="anketa-program--description">
+    <p class="program__profile--description">
       Заполните анкету и мы подберем программу питания для вашего кота
     </p>
 
-    <ul class="anketa">
+    <ul class="profile">
 
-      <li class="anketa-user">
-        <lable class="anketa__user--lable">Имя:<sup>*</sup>
-          <input class="anketa__user--value" type="text" placeholder="Барсик" name="Имя:">
+      <li class="profile__user">
+        <lable class="profile__user--lable">Имя:<sup>*</sup>
+          <input class="profile__user--value" type="text" placeholder="Барсик" name="Имя:">
         </lable>
       </li>
 
-      <li class="anketa-user">
-        <label class="anketa__user--lable">Вес (кг):<sup>*</sup>
-          <input class="anketa__user-value" type="text" placeholder="7" name="Вес (кг):">
+      <li class="profile__user">
+        <label class="profile__user--lable">Вес (кг):<sup>*</sup>
+          <input class="profile__user--value" type="text" placeholder="7" name="Вес (кг):">
         </label>
       </li>
 
-      <li class="anketa-user">
-        <label class="anketa__user--lable">Возраст (лет):
-          <input class="anketa__user-value" type="text" placeholder="7" name="Возраст (лет):">
+      <li class="profile__user">
+        <label class="profile__user--lable">Возраст (лет):
+          <input class="profile__user--value" type="text" placeholder="7" name="Возраст (лет):">
         </label>
       </li>
     </ul>
@@ -91,24 +91,24 @@
   </section>
 
   <!--____________________________________Program_selection_program-user__contact________________________________-->
-  <section class="program__anketa">
+  <section class="program__profile">
 
-    <div class="header">
-      <h2 class="program__anketa--title">Контактные данные(владельца кота)</h2>
+    <div class="program__profile--header">
+      <h2 class="program__profile--lable">Контактные данные(владельца кота)</h2>
     </div>
 
-    <ul class="anketa">
+    <ul class="profil">
 
-      <li class="anketa-user">
-        <lable class="anketa__user--lable">E-mail:<sup>*</sup>
-          <input class="anketa__user--value" type="text" placeholder="kuklachev@gmail.com" name="E-mail:">
+      <li class="profil-user">
+        <lable class="profil__user--lable">E-mail:<sup>*</sup>
+          <input class="profil__user--value" type="text" placeholder="kuklachev@gmail.com" name="E-mail:">
           <img src="img/icon-mail.svg" width="20" height="15">
         </lable>
       </li>
 
-      <li class="anketa-user">
-        <lable class="anketa__user--lable">Телефон:<sup>*</sup>
-          <input class="anketa__user--value" type="text" placeholder="8 (960) 900-60-90" name="Телефон:">
+      <li class="profil-user">
+        <lable class="profil__user--lable">Телефон:<sup>*</sup>
+          <input class="profil__user--value" type="text" placeholder="8 (960) 900-60-90" name="Телефон:">
           <img src="img/icon-phone.svg" width="20" height="20">
         </lable>
       </li>
@@ -116,48 +116,48 @@
   </section>
 
   <!--____________________________________Program_selection_program-user__coment________________________________-->
-  <section class="program__anketa">
+  <section class="program__profil">
 
     <div class="header">
-      <h2 class="program__anketa--title">Комментарий</h2>
+      <h2 class="program__profil--title comment-after">Комментарий</h2>
     </div>
 
-    <textarea class="program__coment--area" name="coment" rows="7">Расскажите обо всех повадках кота </textarea>
+    <textarea class="program__profil--coment" name="coment" rows="7">Расскажите обо всех повадках кота </textarea>
   </section>
 
   <!--____________________________________Program_selection_program-user__Additionally__________________________-->
-  <section class="program__anketa">
+  <section class="program__profil">
 
     <div class="header">
-      <h2 class="program__anketa--title">Дополнительно</h2>
+      <h2 class="program__profil--title add-after">Дополнительно</h2>
     </div>
 
-    <ul class="select">
+    <ul class="select--add">
 
       <li class="select__sweetener">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="checkbox" name="sweetener" checked>
+        <lable class="select__add--lable">
+        <input class="select__add--check" type="checkbox" name="sweetener" checked>
           Сахарозаменитель
         </lable>
       </li>
 
       <li class="select__drinking-water">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="checkbox" name="drinking-water">
+        <lable class="select__add--lable">
+        <input class="select__add--check" type="checkbox" name="drinking-water">
           Питьевая вода
         </lable>
       </li>
 
       <li class="select__milk">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="checkbox" name="milk">
+        <lable class="select__add--lable">
+        <input class="select__add--check" type="checkbox" name="milk">
           Молоко
         </lable>
       </li>
 
       <li class="select__vitamins">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="checkbox" name="vitamins">
+        <lable class="select__add--lable">
+        <input class="select__add--check" type="checkbox" name="vitamins">
           Витамины
         </lable>
       </li>
@@ -165,7 +165,7 @@
   </section>
 
   <section class="form-button">
-    <input class="button  button__name" type="submit" value="Отправить заявку">
+    <input class="button  button--name" type="submit" value="Отправить заявку">
   </section>
   </form>
 
