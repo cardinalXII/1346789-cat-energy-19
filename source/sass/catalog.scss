@@ -13,74 +13,59 @@ $color-button-item-down:rgb(94, 170, 47);
 $color-text: rgb(0, 0, 0);
 
 
-.page-main{
-
+.catalog {
   display: flex;
+  flex-direction: column;
 }
-.button--name{
-  text-transform: uppercase;
-}
-.button--item-all{
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: rgb(0, 0, 0);
-}
-.catalog{
-  &__header--title{
 
+.catalog__header {
     margin: 0;
     padding: 30px 20px;
-
     text-align: left;
     font-size: $font-size-header;
     line-height: $line-height-header;
     font-weight: 300;
-
     border-bottom: 1px solid #e6e6e6;
     border-top: 1px solid #e6e6e6;
   }
-  &__items{
 
+.catalog__items {
     display: flex;
     flex-direction: column;
     padding: 0 20px;
-
   }
-  &__item{
 
+.catalog__item {
     display: flex;
     border-top: 1px solid #e6e6e6;
 
-
-    &--img{
-
+.catalog__img {
       padding: 20px;
       margin: 0;
     }
-    &--img-plus{
 
+.catalog__img-plus {
       padding: 25px 0;
     }
-    &--table{
 
+.catalog__table {
       display: flex;
       padding: 20px 0;
 
-    & th{
-
+      & th {
       font-size: $font-size-table;
       line-height: $line-height-table;
     }
-    & td{
 
+    & td {
       font-family: "Arial";
       font-size: $font-size-td;
       line-height: $line-height-td;
     }
     }
+
   //поправить кнопку//
-    &--button{
+.catalog__button {
       width: 100%;
       background-color: $color-button;
       color: $color-text;
@@ -90,16 +75,21 @@ $color-text: rgb(0, 0, 0);
       text-decoration: none;
 
   //don't work it//
-      & :hover{
+      & :hover {
       background-color:$color-button-hover;
       }
-      & :down{
+
+      & :down {
       background-color:$color-button-down;
       color: rgb(153, 198, 132);
       }
-    }
-    &--all-title
-    {
+
+      &--name {
+      text-transform: uppercase;
+      }
+}
+
+.catalog__all-title {
       margin: 0;
       padding: 0;
       padding-bottom: 15px;
@@ -108,8 +98,8 @@ $color-text: rgb(0, 0, 0);
       line-height: 20px;
       text-transform: uppercase;
     }
-    &--all-tagline{
 
+.catalog__all-tagline {
       margin: 0;
       padding: 0;
       padding-bottom: 25px;
@@ -120,26 +110,34 @@ $color-text: rgb(0, 0, 0);
       line-height: 16px;
     }
   }
-  &__button--item-all{
 
+.catalog__button-item {
       width: 100%;
       background-color: $color-button-item;
 
       padding: 15px 0;
 
       text-decoration: none;
-    }
-  &__аdditional-items--header{
+
+      &--name {
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: rgb(0, 0, 0);
+      }
+
+}
+
+.аdditional-header {
     margin: 0;
     padding: 18px 0;
-
 
     font-size: 24px;
     font-weight: 300;
     line-height: 24px;
     text-align: left;
-  &:after{
 
+  &:after {
     content: "";
 
     position: absolute;
@@ -149,37 +147,32 @@ $color-text: rgb(0, 0, 0);
 
     background-color: rgb(104, 183, 56);
   }
+}
 
-  }
-  &__аdditional{
-
-    &--item{
+.аdditional__item {
       border-top: 1px solid #e6e6e6;
       border-bottom: 1px solid #e6e6e6;
     }
 
-    &--wrap{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    &--tagline{
-
+.аdditional__tagline {
       text-transform: uppercase;
       font-size: 16px;
       font-weight: 300;
       line-height: 16px;
       text-align: left;
     }
-    &--description{
-
-      ;
+.аdditional__wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+.аdditional__description {
       font-size: 14px;
       line-height: 14px;
     }
-  }
-}
-.gift{
+
+
+.gift {
   width: 280px;
   height: 290px;
   margin: 0;
@@ -189,7 +182,7 @@ $color-text: rgb(0, 0, 0);
   background-image: url(../img/gift-photo-mobile@1x.jpg);
   background-repeat: no-repeat;
 
-  &-description{
+.gift__description {
     padding-top: 40px;
     padding-bottom: 45px;
     padding-left: 60px;
@@ -202,6 +195,4 @@ $color-text: rgb(0, 0, 0);
     text-align: center;
     color: rgb(255, 255, 255);
   }
-
 }
-
