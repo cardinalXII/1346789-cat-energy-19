@@ -28,35 +28,35 @@
 
 
   <!--____________________________________MAIN__________________________________________-->
-  <main class="page-main">
+  <main class="program">
   <!--____________________________________Program_selection__________________________________________-->
-  <form class="data-user" method="post" action="https://echo.htmlacademy.ru">
+  <form class="program-user" method="post" action="https://echo.htmlacademy.ru">
 
   <!--____________________________________Program_selection_program__anketa______________________________________-->
-  <section class="program__profile">
-    <h1 class="program__profile--title">Подбор программы</h1>
+  <section class="header">
+    <h1 class="header__title">Подбор программы</h1>
 
-    <p class="program__profile--description">
+    <p class="header__description">
       Заполните анкету и мы подберем программу питания для вашего кота
     </p>
 
     <ul class="profile">
 
       <li class="profile__user">
-        <lable class="profile__user--lable">Имя:<sup>*</sup>
-          <input class="profile__user--value" type="text" placeholder="Барсик" name="Имя:">
+        <lable class="profile__lable">Имя:<sup>*</sup>
+          <input class="profile__value" type="text" placeholder="Барсик" name="Имя:">
         </lable>
       </li>
 
       <li class="profile__user">
-        <label class="profile__user--lable">Вес (кг):<sup>*</sup>
-          <input class="profile__user--value" type="text" placeholder="7" name="Вес (кг):">
+        <label class="profile__lable">Вес (кг):<sup>*</sup>
+          <input class="profile__value" type="text" placeholder="7" name="Вес (кг):">
         </label>
       </li>
 
       <li class="profile__user">
-        <label class="profile__user--lable">Возраст (лет):
-          <input class="profile__user--value" type="text" placeholder="7" name="Возраст (лет):">
+        <label class="profile__lable">Возраст (лет):
+          <input class="profile__value" type="text" placeholder="7" name="Возраст (лет):">
         </label>
       </li>
     </ul>
@@ -67,23 +67,23 @@
 
     <ul class="select">
 
-      <li class="select__slim">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="radio" name="select__program" checked>
+      <li class="select__value">
+        <lable class="select__lable">
+        <input class="select__radio" type="radio" name="select__program" checked>
           Похудение
         </lable>
       </li>
 
-      <li class="select__slim">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="radio" name="select__program">
+      <li class="select__value">
+        <lable class="select__lable">
+        <input class="select__radio" type="radio" name="select__program">
           Набор массы
         </lable>
       </li>
 
-      <li class="select__slim">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="radio" name="select__program">
+      <li class="select__value">
+        <lable class="select__lable">
+        <input class="select__radio" type="radio" name="select__program">
           Не знаю (Нужен ваш совет)
         </lable>
       </li>
@@ -91,24 +91,24 @@
   </section>
 
   <!--____________________________________Program_selection_program-user__contact________________________________-->
-  <section class="program__profile">
+  <section class="program-profile">
 
-    <div class="program__profile--header">
-      <h2 class="program__profile--lable">Контактные данные(владельца кота)</h2>
+    <div class="program__header">
+      <h2 class="program__lable">Контактные данные(владельца кота)</h2>
     </div>
 
     <ul class="profil">
 
       <li class="profil-user">
-        <lable class="profil__user--lable">E-mail:<sup>*</sup>
-          <input class="profil__user--value" type="text" placeholder="kuklachev@gmail.com" name="E-mail:">
+        <lable class="profil__able">E-mail:<sup>*</sup>
+          <input class="profil__value" type="text" placeholder="kuklachev@gmail.com" name="E-mail:">
           <img src="img/icon-mail.svg" width="20" height="15">
         </lable>
       </li>
 
       <li class="profil-user">
-        <lable class="profil__user--lable">Телефон:<sup>*</sup>
-          <input class="profil__user--value" type="text" placeholder="8 (960) 900-60-90" name="Телефон:">
+        <lable class="profil__lable">Телефон:<sup>*</sup>
+          <input class="profil__value" type="text" placeholder="8 (960) 900-60-90" name="Телефон:">
           <img src="img/icon-phone.svg" width="20" height="20">
         </lable>
       </li>
@@ -118,46 +118,46 @@
   <!--____________________________________Program_selection_program-user__coment________________________________-->
   <section class="program__profil">
 
-    <div class="header">
-      <h2 class="program__profil--title comment-after">Комментарий</h2>
+    <div class="program__header">
+      <h2 class="program__title comment-after">Комментарий</h2>
     </div>
 
-    <textarea class="program__profil--coment" name="coment" rows="7">Расскажите обо всех повадках кота </textarea>
+    <textarea class="program__coment" name="coment" rows="7">Расскажите обо всех повадках кота </textarea>
   </section>
 
   <!--____________________________________Program_selection_program-user__Additionally__________________________-->
   <section class="program__profil">
 
-    <div class="header">
-      <h2 class="program__profil--title add-after">Дополнительно</h2>
+    <div class="program__header">
+      <h2 class="program__lable add-after">Дополнительно</h2>
     </div>
 
-    <ul class="select--add">
+    <ul class="add">
 
-      <li class="select__sweetener">
-        <lable class="select__add--lable">
-        <input class="select__add--check" type="checkbox" name="sweetener" checked>
+      <li class="add__sweetener">
+        <lable class="add__lable">
+        <input class="add__check" type="checkbox" name="sweetener" checked>
           Сахарозаменитель
         </lable>
       </li>
 
-      <li class="select__drinking-water">
-        <lable class="select__add--lable">
-        <input class="select__add--check" type="checkbox" name="drinking-water">
+      <li class="add__drinking-water">
+        <lable class="add__lable">
+        <input class="add__check" type="checkbox" name="drinking-water">
           Питьевая вода
         </lable>
       </li>
 
-      <li class="select__milk">
-        <lable class="select__add--lable">
-        <input class="select__add--check" type="checkbox" name="milk">
+      <li class="add__milk">
+        <lable class="add__lable">
+        <input class="add__check" type="checkbox" name="milk">
           Молоко
         </lable>
       </li>
 
-      <li class="select__vitamins">
-        <lable class="select__add--lable">
-        <input class="select__add--check" type="checkbox" name="vitamins">
+      <li class="add__vitamins">
+        <lable class="add__lable">
+        <input class="add__check" type="checkbox" name="vitamins">
           Витамины
         </lable>
       </li>
@@ -207,7 +207,7 @@
     </a>
 
     <!--_________________SOCIAL_BUTTONS______________________-->
-    <ul class="page-footer__social-list">
+    <ul class="social">
       <!--_________________SOCIAL_BUTTONS--VK______________________-->
       <li class="social__item">
 
