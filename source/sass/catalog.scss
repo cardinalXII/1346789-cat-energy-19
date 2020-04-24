@@ -11,131 +11,146 @@ $color-button-item: rgb(242, 242, 242);
 $color-button-item-hover:rgb(94, 170, 47);
 $color-button-item-down:rgb(94, 170, 47);
 $color-text: rgb(0, 0, 0);
-
+$color-text-button-all: rgb(0, 0, 0);
+$color-text-button-order:rgb(255, 255, 255);
+$width-mobile: 320px;
 
 .catalog {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: $width-mobile;
 }
 
 .catalog__header {
-    margin: 0;
-    padding: 30px 20px;
-    text-align: left;
-    font-size: $font-size-header;
-    line-height: $line-height-header;
-    font-weight: 300;
-    border-bottom: 1px solid #e6e6e6;
-    border-top: 1px solid #e6e6e6;
-  }
+  margin: 0;
+  padding: 30px 20px;
+  text-align: left;
+  font-size: $font-size-header;
+  line-height: $line-height-header;
+  font-weight: 300;
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+}
 
 .catalog__items {
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .catalog__item {
-    display: flex;
-    border-top: 1px solid #e6e6e6;
+  display: flex;
+  border-top: 1px solid #e6e6e6;
+}
 
 .catalog__img {
-      padding: 20px;
-      margin: 0;
-    }
-
-.catalog__img-plus {
-      padding: 25px 0;
-    }
+  padding: 20px;
+  margin: 0;
+}
 
 .catalog__table {
-      display: flex;
-      padding: 20px 0;
+  padding: 20px 0;
 
-      & th {
-      font-size: $font-size-table;
-      line-height: $line-height-table;
-    }
+  & th {
+    font-size: $font-size-table;
+    line-height: $line-height-table;
+  }
 
-    & td {
-      font-family: "Arial";
-      font-size: $font-size-td;
-      line-height: $line-height-td;
-    }
-    }
+  & td {
+    font-family: "Arial";
+    font-size: $font-size-td;
+    line-height: $line-height-td;
+  }
+}
 
-  //поправить кнопку//
+//поправить кнопку//
 .catalog__button {
-      width: 100%;
-      background-color: $color-button;
-      color: $color-text;
+  width: 100%;
+  background-color: $color-button;
+  color: $color-text;
 
-      padding: 15px 0;
+  padding: 15px 0;
 
-      text-decoration: none;
+  text-decoration: none;
 
   //don't work it//
-      & :hover {
-      background-color:$color-button-hover;
-      }
+  & :hover {
+    background-color: $color-button-hover;
+  }
 
-      & :down {
-      background-color:$color-button-down;
-      color: rgb(153, 198, 132);
-      }
+  & :down {
+    background-color: $color-button-down;
+    color: rgb(153, 198, 132);
+  }
 
-      &--name {
-      text-transform: uppercase;
-      }
+  &--name {
+    text-transform: uppercase;
+    text-align: center;
+    color:$color-text-button-order;
+  }
+}
+
+.catalog__all{
+
+  padding-left: 45px;
+}
+
+.catalog__img-plus {
+  padding-left: 80px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .catalog__all-title {
-      margin: 0;
-      padding: 0;
-      padding-bottom: 15px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
 
-      font-size: 16px;
-      line-height: 20px;
-      text-transform: uppercase;
-    }
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: left;
+}
 
 .catalog__all-tagline {
-      margin: 0;
-      padding: 0;
-      padding-bottom: 25px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
 
-      font-family: "Arial";
-      font-size: 12px;
-      font-weight: 300;
-      line-height: 16px;
-    }
+  font-family: "Arial";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.catalog__button-all {
+  width: 100%;
+  background-color: $color-button-item;
+
+  padding: 15px 0;
+
+  text-decoration: none;
+
+  &--name {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-text-button-all;
   }
-
-.catalog__button-item {
-      width: 100%;
-      background-color: $color-button-item;
-
-      padding: 15px 0;
-
-      text-decoration: none;
-
-      &--name {
-      font-size: 16px;
-      line-height: 20px;
-      text-transform: uppercase;
-      color: rgb(0, 0, 0);
-      }
-
 }
 
 .аdditional-header {
-    margin: 0;
-    padding: 18px 0;
+  margin: 0;
+  padding: 18px 0;
 
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 24px;
-    text-align: left;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
 
   &:after {
     content: "";
@@ -149,28 +164,36 @@ $color-text: rgb(0, 0, 0);
   }
 }
 
+.аdditional{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .аdditional__item {
-      border-top: 1px solid #e6e6e6;
-      border-bottom: 1px solid #e6e6e6;
-    }
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
 
 .аdditional__tagline {
-      text-transform: uppercase;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 16px;
-      text-align: left;
-    }
-.аdditional__wrap {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-.аdditional__description {
-      font-size: 14px;
-      line-height: 14px;
-    }
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: left;
+}
 
+.аdditional__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.аdditional__description {
+  font-size: 14px;
+  line-height: 14px;
+}
 
 .gift {
   width: 280px;
@@ -181,18 +204,22 @@ $color-text: rgb(0, 0, 0);
 
   background-image: url(../img/gift-photo-mobile@1x.jpg);
   background-repeat: no-repeat;
+}
+
+.gift__icon{
+  padding-left: 110px;
+}
 
 .gift__description {
-    padding-top: 40px;
-    padding-bottom: 45px;
-    padding-left: 60px;
-    padding-right: 60px;
+  padding-top: 40px;
+  padding-bottom: 45px;
+  padding-left: 60px;
+  padding-right: 60px;
 
-    font-family: "Arial";
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 20px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-  }
+  font-family: "Arial";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
