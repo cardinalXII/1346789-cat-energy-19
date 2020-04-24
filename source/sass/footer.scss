@@ -6,43 +6,43 @@ $font-line-height-copyright: 16px;
 $font-color: rgb(68, 68, 68);
 
 .page-footer{
-
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   background-color: rgb(242, 242, 242);
 
   width: $width-mobile;
 }
-.adres-list{
+.adres-list {
 
   background-color: rgb(255, 255, 255);
-
-  &__header{
+}
+.adres-list__header {
     display: flex;
     justify-content: space-around;
 
     padding: 20px;
   }
-  &__titel{
+.adres-list__titel {
 
     font-size: $font-size-main;
     line-height: $font-line-height;
     text-transform: uppercase;
 
   }
-  &__adres{
+.adres-list__adres {
     width: 190px;
     font-size: $font-size-adres;
     line-height: $font-line-height;
     font-weight: 300;
   }
-}
-.page-footer__logo{
+.page-footer__logo {
 
   padding: 30px 0;
   margin: 0;
 }
-.page-footer__social-list{
+.social {
 
   width: 280px;
   display:flex;
@@ -55,16 +55,15 @@ $font-color: rgb(68, 68, 68);
   margin: 0;
   list-style: none;
 }
-.copyright{
+.copyright {
 
   display: flex;
   justify-content: space-between;
   padding: 30px 10px;
-
-  &-title{
+}
+.copyright-title {
 
   font-size: $font-size-main;
   line-height: $font-line-height-copyright;
   color: $font-color;
-  }
 }

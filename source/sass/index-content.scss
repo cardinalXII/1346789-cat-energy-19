@@ -17,6 +17,8 @@ $color-button-down:rgb(94, 170, 47);
 
 //главный контейнер//
 .page-main {
+  margin-left: auto;
+  margin-right: auto;
   width: $width-mobile;
 
   display: flex;
@@ -28,7 +30,6 @@ $color-button-down:rgb(94, 170, 47);
 }
 //Хедер главной страницы//
 .main-header {
-
   background-image: url(../img/index-background-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-color: rgb(255, 255, 255);
@@ -38,8 +39,8 @@ $color-button-down:rgb(94, 170, 47);
 .main-header img {
   padding: 20px 0;
 }
-.main-header__title {
 
+.main-header__title {
   font-size: $font-size-header-h1;
   line-height: $font-line-height-header-h1;
   font-weight: 300;
@@ -47,7 +48,6 @@ $color-button-down:rgb(94, 170, 47);
 }
 
 .main-header__tagline {
-
   font-size: $font-size-p;
   line-height: $font-line-height-header-p;
   color: $color-text;
@@ -55,7 +55,6 @@ $color-button-down:rgb(94, 170, 47);
 }
 
 .main-header__button {
-
   width: 100%;
   background-color: $color-button;
   color: $color-text;
@@ -76,14 +75,12 @@ $color-button-down:rgb(94, 170, 47);
 }
 //название кнопки//
 .button-lable {
-
   font-size: $font-size-button;
   line-height: $font-line-height-medium;
   text-transform: uppercase;
 }
 //средняя часть страницы, описание программ//
 .program-description {
-
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -101,7 +98,6 @@ $color-button-down:rgb(94, 170, 47);
     padding: 0 20px;
 }
 
-
 .item-header {
   display: flex;
   flex-direction: row;
@@ -109,8 +105,8 @@ $color-button-down:rgb(94, 170, 47);
 }
 //оцентровать изображение//
 .item-header__img {
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
   position: relative;
   background-color: $color-button;
   border-radius: 50%;
@@ -119,58 +115,53 @@ $color-button-down:rgb(94, 170, 47);
   margin: 25px;
 }
 //выяснить что делает//
-.item img {
+.item-header__img img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -2px;
+  right: 1px;
 }
 
 .item-tagline {
-
-    font-size: $font-size-taglain;
-    line-height: $font-line-height-tagline;
-    font-weight: 300;
-    text-transform: uppercase;
-
-  }
+  font-size: $font-size-taglain;
+  line-height: $font-line-height-tagline;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 
 //описание программ//
 .item-description {
+  font-family: $font;
+  font-size: $font-size-button;
+  line-height: $font-line-height-medium;
+  text-align: left;
 
-    font-family: $font;
-    font-size: $font-size-button;
-    line-height: $font-line-height-medium;
-    text-align: left;
-
-    padding-bottom: 25px;
-    border-bottom: 1px solid rgb(217, 217, 217);
-  }
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
   //нижние ссылки в каталог//
- .item-link {
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    text-decoration: none;
+.item-link {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
 
-    padding-top: 5px;
-    padding-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
 
 .item-link__right-arrow img {
       margin-left: 10px;
-    }
-  }
+}
 
 
 //Раздел Как это работает//
 
 .work__description {
-
   display: flex;
   flex-direction: column;
 }
 
 .work__title {
-
   margin: 0;
   padding: 0;
   padding-left: 20px;
@@ -181,28 +172,25 @@ $color-button-down:rgb(94, 170, 47);
   text-align: left;
 }
 
-.wor-list {
-
+.work-list {
   list-style: none;
   margin: 0;
   padding: 0;
   padding: 20px;
 }
 
-.wor-list__item {
+.work-list__item {
   display: flex;
   align-items: center;
 
 }
 
-.wor-list__img {
+.work-list__img {
   width: 60px;
-
   background: green;
 }
 
-.wor-list__description {
-
+.work-list__description {
   text-align: left;
   font-family: $font;
   font-size: $font-size-p;
@@ -214,104 +202,100 @@ $color-button-down:rgb(94, 170, 47);
   margin-left: 10px;
   }
 //Раздел Живой пример//
-.example {
 
-  outline: 2px solid green;
-}
 .example__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
 
-    margin: 0;
-    padding: 0;
-    padding-left: 20px;
-
-    font-size: $font-size-work-h1;
-    line-height: $font-line-height-work-h1;
-    font-weight: 300;
-    text-align: left;
+  font-size: $font-size-work-h1;
+  line-height: $font-line-height-work-h1;
+  font-weight: 300;
+  text-align: left;
   }
 
 .example__description {
+  text-align: left;
+  font-family: $font;
+  font-size: $font-size-p;
+  font-weight: 300;
+  line-height: $font-line-height-medium;
 
-    text-align: left;
-    font-family: $font;
-    font-size: $font-size-p;
-    font-weight: 300;
-    line-height: $font-line-height-medium;
-
-    padding-right: 35px;
-    padding-left: 20px;
+  padding-right: 35px;
+  padding-left: 20px;
   }
-.example__wrapper {
-    display: flex;
-    justify-content: space-between;
 
-    padding-right: 20px;
-    padding-left: 20px;
+.example__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding-right: 20px;
+  padding-left: 20px;
   }
 
   // сместить вниз название окон вес и время//
 .example__kg,
 .example__day {
+  width: 55px;
+  height: 20px;
 
-    width: 55px;
-    height: 20px;
+  padding: 0 15px;
 
-    padding: 0 15px;
+  font-family:"Arial";
+  font-size: 12px;
+  line-height: 12px;
 
-    font-family:"Arial";
-    font-size: 12px;
-    line-height: 12px;
+}
 
-  }
 .example__kg-lower,
 .example__spent-day {
+  width: 100px;
 
-    width: 100px;
+  padding: 0;
+  margin: 0;
 
-    padding: 0;
-    margin: 0;
+  border: none;
 
-    border: none;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
 
-    text-align: center;
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
+}
 
-  }
 .example__cost {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 
-    text-align: center;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
 .example__before-after {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
 
-  }
 .example__status {
-    text-transform: uppercase;
-  }
+  text-transform: uppercase;
+}
 
   //разобраться с позиционированием ползунка//
 .example__scale {
-    width: 85px;
-    height: 15px;
+  width: 85px;
+  height: 15px;
 
-    border: 1px solid gray;
+  border: 1px solid gray;
+  border-radius: 3px;
+
+  &:before {
+    content: "";
+
+    position: absolute;
+    width: 36px;
+    height: 5px;
+
     border-radius: 3px;
-
-    &:before {
-      content: "";
-
-      position: absolute;
-      width: 36px;
-      height: 5px;
-
-      border-radius: 3px;
-      background-color: green;
-    }
+    background-color: green;
   }
+}

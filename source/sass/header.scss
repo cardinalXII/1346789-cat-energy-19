@@ -7,42 +7,61 @@ $tex-menu-size: 20px;
 $tex-menu-transform: uppercase;
 
 //главный контейнер хедера//
-.top-header{
+.top-header {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-
 
   width: $width-mobile;
 
   background: rgb(255, 255, 255);
+}
 
-
-  &__link-index{
-    position: relative;
-    height: 45px;
-    padding: 15px 20px;
-
-  }
-
+.top-header__link-index {
+  position: relative;
+  height: 45px;
+  padding: 10px 20px;
+}
 
 //кнопка открытия меню//
-  &__button{
+.top-header__button {
 
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+
+  top: -40px;
+  left: 280px;
+  z-index: 2;
+}
+  //кнопка когда меню закрыто//
+.top-header__button--closed {
+
+  &:before {
+    content: "";
+
     position: absolute;
 
-    top: 25px;
-    left: 280px;
-    z-index: 2;
-  }
-  //кнопка когда меню закрыто//
-  &__button--closed{
+    width: 30px;
+    height: 2px;
 
-    &:before{
+    top: 0;
+    left: 0;
+
+
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 8px 0 0 rgb(0, 0, 0), 0 16px 0 0 rgb(0, 0, 0);
+  }
+}
+  //кнопка когда меню открыто//
+.top-header__button--opened {
+
+    &:after,
+    &:before {
       content: "";
 
       position: absolute;
@@ -50,91 +69,58 @@ $tex-menu-transform: uppercase;
       width: 30px;
       height: 2px;
 
-      top: 5px;
+      top: 12px;
       left: 0;
 
       background-color: rgb(0, 0, 0);
-      box-shadow: 0 8px 0 0 rgb(0, 0, 0), 0 16px 0 0 rgb(0, 0, 0);
     }
-
-  }
-  //кнопка когда меню открыто//
-  &__button--opened{
-
-      &:after,
-      &:before{
-        content: "";
-
-        position: absolute;
-
-        width: 30px;
-        height: 2px;
-
-        top: 12px;
-        left: 0;
-
-        background-color: rgb(0, 0, 0);
-      }
-      &:after{
-      	transform: rotate(-45deg);
-      }
-      &:before{
-      	transform: rotate(45deg);
-      }
-  }
+    &:after {
+      transform: rotate(-45deg);
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+}
 
   //Меню навигации//
-  &-menu{
-    display: flex;
-    flex-direction: column;
+.top-header-menu {
+  display: flex;
+  flex-direction: column;
 
-    list-style: none;
+  list-style: none;
 
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    text-align: center;
-
-
-  }
+  text-align: center;
 }
 //кнопки навигации позиционирование//
-.menu-list__item{
-
+.menu-list__item {
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: rgb(230, 230, 230,);
 
   padding: 25px 0;
-
+}
 //кнопки навигации СТИЛИСТИКА//
-  & a{
+.menu-list__item a {
+  font-size: $tex-menu-size;
+  text-decoration: none;
+  text-transform: $tex-menu-transform;
+  color: opacify($text-menu-color,1);
+}
 
-    font-size: $tex-menu-size;
-    text-decoration: none;
-    text-transform: $tex-menu-transform;
-    color: opacify($text-menu-color,1);
-
-  }
-  & a:hover{
-
+.menu-list__item a:hover {
     color:opacify($text-menu-color,0.5);
+}
 
-  }
-  & a:down{
-
+.menu-list__item a:down {
     color:opacify($text-menu-color,0.1);
+}
 
-  }
-  & a:active{
-
+.menu-list__item a:active {
     text-decoration: underline;
     text-decoration-color:rgb(104, 183, 56);
 
     color:opacify($text-menu-color,1);
-
-  }
-
-
-
 }
