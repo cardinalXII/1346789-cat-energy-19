@@ -12,6 +12,7 @@ $color-button-down:rgb(94, 170, 47);
 $color-text: rgb(255, 255, 255);
 
 $width-mobile: 320px;
+
 .program {
   display: flex;
   flex-direction: column;
@@ -23,7 +24,6 @@ $width-mobile: 320px;
 .program-user {
   display: flex;
   flex-direction: column;
-
 }
 
 .header {
@@ -65,7 +65,7 @@ $width-mobile: 320px;
   flex-direction: column;
   list-style: none;
 
-   &:nth-child(2){
+  &:nth-child(2) {
     margin-bottom: 15px;
     margin-top: 15px;
   }
@@ -93,10 +93,12 @@ $width-mobile: 320px;
   font-size: $font-size-profile;
   line-height: $font-line-height-description;
   text-transform: uppercase;
+
   &--icon {
-  padding-right: 35px;
+    padding-right: 35px;
   }
 }
+
 .profile__description {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -130,7 +132,6 @@ $width-mobile: 320px;
 
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
 
 .select {
@@ -149,7 +150,7 @@ $width-mobile: 320px;
 
 //сделать отступ от круга//
 .select__radio {
-  padding-left:20px;
+  padding-left: 20px;
 }
 
 .select__value {
@@ -158,14 +159,14 @@ $width-mobile: 320px;
   margin: 0;
   text-align: left;
 
-  &:nth-child(2){
+  &:nth-child(2) {
     margin-bottom: 15px;
     margin-top: 15px;
   }
 }
 
 .select__lable {
-  font-size: 400;
+  font-weight: 400;
   font-size: $font-size-profile;
   line-height: $font-line-height-description;
 
@@ -206,7 +207,7 @@ $width-mobile: 320px;
 
 //-----------------------------------Pseudo Elements------------------------------//
 //удлинить//
-.program__lable-greenline:after {
+.program__lable-greenline::after {
   content: "";
 
   position: absolute;
@@ -220,7 +221,7 @@ $width-mobile: 320px;
   background-color: rgb(104, 183, 56);
 }
 
-.comment-after:after {
+.comment-after::after {
   content: "";
 
   width: 150px;
@@ -230,9 +231,9 @@ $width-mobile: 320px;
   padding-right: 20px;
 
   background-color: rgb(104, 183, 56);
-  }
+}
 
-.add-after:after {
+.add-after::after {
   content: "";
 
   position: absolute;
@@ -244,7 +245,7 @@ $width-mobile: 320px;
   padding-right: 10px;
 
   background-color: rgb(104, 183, 56);
-  }
+}
 
 //------------------------------------Program_selection_program-user__Additionall--------------------//
 .add {
@@ -266,10 +267,9 @@ $width-mobile: 320px;
   font-size: $font-size-profile;
   line-height: $font-line-height-description;
   text-transform: uppercase;
-
 }
 
-.button{
+.button {
   width: 100%;
   background-color: $color-button;
 
@@ -278,15 +278,17 @@ $width-mobile: 320px;
 
   text-decoration: none;
 
-//don't work it//
-  & :hover{
-    background-color:$color-button-hover;
+  //don't work it//
+  & ::hover {
+    background-color: $color-button-hover;
   }
-  & :down{
-    background-color:$color-button-down;
+
+  & ::down {
+    background-color: $color-button-down;
     color: rgb(153, 198, 132);
   }
-  &--name{
+
+  &--name {
     color: $color-text;
     text-transform: uppercase;
     font-size: 16px;
@@ -294,7 +296,7 @@ $width-mobile: 320px;
   }
 }
 
-.legend{
+.legend {
   text-align: center;
   font-size: 14px;
   line-height: 16px;
