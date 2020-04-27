@@ -43,6 +43,7 @@
     <ul class="profile">
 
       <li class="profile__user">
+
         <lable class="profile__lable">Имя:<sup>*</sup>
           <input class="profile__value" type="text" placeholder="Барсик" name="Имя:">
         </lable>
@@ -91,36 +92,43 @@
   </section>
 
   <!--____________________________________Program_selection_program-user__contact________________________________-->
-  <section class="program-profile">
+  <section class="program__profile">
 
-    <div class="program__header">
-      <h2 class="program__lable">Контактные данные(владельца кота)</h2>
-    </div>
+    <h2 class="program__lable  program__lable-greenline">Контактные данные(владельца кота)</h2>
 
     <ul class="profile">
 
-      <li class="profile-user">
-        <lable class="profile__able">E-mail:<sup>*</sup>
-          <input class="profile__value" type="text" placeholder="kuklachev@gmail.com" name="E-mail:">
-          <img src="img/icon-mail.svg" width="20" height="15">
+      <li class="profile__user">
+
+        <lable class="profile__lable">E-mail:<sup>*</sup>
+          <input class="profile__value profile__value--icon" type="text" placeholder="kuklachev@gmail.com" name="E-mail:">
         </lable>
+
+        <div class="profile__img">
+          <img src="img/icon-mail.svg" width="20" height="20">
+        </div>
+
       </li>
 
-      <li class="profil-user">
+      <li class="profile__user">
+
         <lable class="profile__lable">Телефон:<sup>*</sup>
-          <input class="profile__value" type="text" placeholder="8 (960) 900-60-90" name="Телефон:">
-          <img src="img/icon-phone.svg" width="20" height="20">
+          <input class="profile__value profile__value--icon" type="text" placeholder="8 (960) 900-60-90" name="Телефон:">
         </lable>
+
+        <div class="profile__img">
+          <img src="img/icon-phone.svg" width="20" height="20">
+        </div>
+
       </li>
+
     </ul>
   </section>
 
   <!--____________________________________Program_selection_program-user__coment________________________________-->
   <section class="program__profile">
 
-    <div class="program__header">
-      <h2 class="program__title comment-after">Комментарий</h2>
-    </div>
+    <h2 class="program__lable comment-after">Комментарий</h2>
 
     <textarea class="program__coment" name="coment" rows="7">Расскажите обо всех повадках кота </textarea>
   </section>
@@ -128,34 +136,32 @@
   <!--____________________________________Program_selection_program-user__Additionally__________________________-->
   <section class="program__profile">
 
-    <div class="program__header">
-      <h2 class="program__lable add-after">Дополнительно</h2>
-    </div>
+    <h2 class="program__lable add-after">Дополнительно</h2>
 
     <ul class="add">
 
-      <li class="add__sweetener">
+      <li class="add__item">
         <lable class="add__lable">
         <input class="add__check" type="checkbox" name="sweetener" checked>
           Сахарозаменитель
         </lable>
       </li>
 
-      <li class="add__drinking-water">
+      <li class="add__item">
         <lable class="add__lable">
         <input class="add__check" type="checkbox" name="drinking-water">
           Питьевая вода
         </lable>
       </li>
 
-      <li class="add__milk">
+      <li class="add__item">
         <lable class="add__lable">
         <input class="add__check" type="checkbox" name="milk">
           Молоко
         </lable>
       </li>
 
-      <li class="add__vitamins">
+      <li class="add__item">
         <lable class="add__lable">
         <input class="add__check" type="checkbox" name="vitamins">
           Витамины
@@ -164,9 +170,8 @@
     </ul>
   </section>
 
-  <section class="form-button">
     <input class="button  button--name" type="submit" value="Отправить заявку">
-  </section>
+
   </form>
 
   <small class="legend">
