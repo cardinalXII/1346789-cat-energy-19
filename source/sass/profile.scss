@@ -1,0 +1,78 @@
+//------------------Program_selection_program__anketa & Program_selection_program-user__contact---------//
+//перенести слова на строку//
+.profile {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+
+  text-align: left;
+  font-size: $font-size-profile;
+  line-height: $font-line-height-description;
+  text-transform: uppercase;
+}
+
+.profile__user {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  &:nth-child(2) {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+
+.profile__lable {
+  font-family: inherit;
+  display: flex;
+  align-items: baseline;
+}
+
+.profile__value {
+  height: 25px;
+  flex-grow: 1;
+
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+
+  margin-bottom: 10px;
+  margin-left: 5px;
+
+  font-family: inherit;
+  font-size: $font-size-profile;
+  line-height: $font-line-height-description;
+  text-transform: uppercase;
+
+  &--icon {
+    padding-right: 35px;
+  }
+}
+
+.profile__description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+
+  font-weight: 300;
+  font-size: $font-size-description;
+  line-height: $font-line-height-description;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+//------------------image in block Program_selection_program-user__coment-------------------//
+.profile__img {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+
+  position: relative;
+
+  top: -40px;
+  left: 245px;
+}

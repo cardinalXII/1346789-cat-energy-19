@@ -1,0 +1,44 @@
+//Раздел Как это работает//
+.work__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.work__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+
+  font-size: $font-size-work-h1;
+  line-height: $font-line-height-work-h1;
+  font-weight: 300;
+  text-align: left;
+}
+
+.work-list {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.work-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.work-list__img {
+  width: 60px;
+  background: green;
+}
+
+.work-list__description {
+  text-align: left;
+  font-family: $font;
+  font-size: $font-size-p;
+  font-weight: 300;
+  line-height: $font-line-height-medium;
+
+  padding-right: 20px;
+  padding-left: 15px;
+  margin-left: 10px;
+}

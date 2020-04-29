@@ -1,0 +1,30 @@
+//кнопки навигации позиционирование//
+.menu-list__item {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(230, 230, 230,);
+
+  padding: 25px 0;
+}
+//кнопки навигации СТИЛИСТИКА//
+.menu-list__item a {
+  font-size: $tex-menu-size;
+  text-decoration: none;
+  text-transform: $tex-menu-transform;
+  color: opacify($text-menu-color, 1);
+}
+
+.menu-list__item a:hover {
+  color: opacify($text-menu-color, 0.5);
+}
+
+.menu-list__item a:focus {
+  color: opacify($text-menu-color, 0.1);
+}
+
+.menu-list__item a:active {
+  text-decoration: underline;
+  text-decoration-color: rgb(104, 183, 56);
+
+  color: opacify($text-menu-color, 1);
+}

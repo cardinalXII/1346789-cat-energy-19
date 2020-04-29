@@ -1,0 +1,18 @@
+//средняя часть страницы, описание программ//
+.program-description {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 0 20px;
+  padding-top: 20px;
+}
+
+.program-description__item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(242, 242, 242);
+
+  margin-bottom: 20px;
+  padding: 0 20px;
+}

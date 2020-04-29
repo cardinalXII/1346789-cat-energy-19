@@ -1,0 +1,29 @@
+.gift {
+  width: 280px;
+  height: 290px;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+  padding-top: 65px;
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.gift__icon {
+  padding-left: 110px;
+}
+
+.gift__description {
+  padding-top: 40px;
+  padding-bottom: 45px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
