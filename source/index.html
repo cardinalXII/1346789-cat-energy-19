@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи - Главная</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" >
   </head>
   <body>
 
@@ -20,7 +20,7 @@
     </a>
 
     <!--__________________MENU_______________________-->
-    <button class="top-header__button--open"></button>
+    <button class="top-header__button  top-header__button--closed"></button>
 
     <ul class="top-header-menu menu-list">
       <li class="menu-list__item"><a>Главная</a></li>
@@ -32,7 +32,7 @@
 
 
   <!--____________________________________MAIN__________________________________________-->
-  <main class="page-main">
+  <main class="main-page">
 
     <h1 class="visually-hidden"> магазин кэт энерджи. Описание функционального питания для котов, выбор программы, как это работает, пример на живом коте, как добраться до магазина.</h1>
 
@@ -42,9 +42,9 @@
 
       <p class="main-header__tagline"> Занялся собой? Займись котом!</p>
 
-      <img class="main-header__item" src="img/index-can-mobile@1x.png">
+      <img src="img/index-can-mobile@1x.png">
 
-      <a class="main-header__button button" href="program.html" width="280" height="270">Подобрать программу</a>
+      <a class="main-header__button button-lable" href="program.html" width="280" height="270">Подобрать программу</a>
     </section>
 
 
@@ -54,7 +54,9 @@
       <article class="program-description__item">
 
         <div class="item-header">
-          <img class="item-header__logo" src="img/icon-cat-slim.svg" width="50" height="50" alt="кратинка стройной черной кошки для похудения">
+          <div class="item-header__img">
+          <img src="img/icon-cat-slim.svg" width="50" height="50" alt="кратинка стройной черной кошки для похудения">
+          </div>
           <h1 class="item-tagline">Похудение</h1>
         </div>
 
@@ -78,7 +80,9 @@
       <article class="program-description__item">
 
         <div class="item-header">
-          <img class="item-header__logo" src="img/icon-cat-pro.svg" width="50" height="50" alt="кратинка сильной черной кошки для набора массы тела">
+          <div class="item-header__img">
+            <img src="img/icon-cat-pro.svg" width="50" height="50" alt="кратинка сильной черной кошки для набора массы тела">
+          </div>
           <h1 class="item-tagline">Набор массы</h1>
         </div>
 
@@ -102,35 +106,43 @@
 
 
     <!--____________________________________how it works__________________________________________-->
-    <section class="work-description">
+    <section class="work">
 
       <h1 class="work__title">Как это работает</h1>
 
       <ul class="work-list">
 
         <li class="work-list__item">
-          <img class="work-list__img" src="img/advantage-leaf@1x.png" alt="изображение листа-экологично чисто и полезно" width="35" height="35">
+          <div class="work-list__img">
+            <img src="img/advantage-leaf@1x.png" alt="изображение листа-экологично чисто и полезно" width="35" height="35">
+          </div>
           <p class="work-list__description">
             Функциональное питание содержит только полезные питательные вещества.
           </p>
         </li>
 
         <li class="work-list__item">
-          <img class="work-list__img" src="img/advantage-powder@1x.png" alt="изображение стакана с водой в которую насыпан порошок функционального питания" width="35" height="35">
+          <div class="work-list__img">
+            <img src="img/advantage-powder@1x.png" alt="изображение стакана с водой в которую насыпан порошок функционального питания" width="35" height="35">
+          </div>
           <p class="work-list__description">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </p>
         </li>
 
         <li class="work-list__item">
-          <img class="work-list__img" src="img/advantage-dining@1x.png" alt="изображение вилки и ножика" width="35" height="35">
+          <div class="work-list__img">
+            <img src="img/advantage-dining@1x.png" alt="изображение вилки и ножика" width="35" height="35">
+          </div>
           <p class="work-list__description">
             Замените один-два приема обычной еды на наше функциональное питание.
           </p>
         </li>
 
         <li class="work-list__item">
-          <img class="work-list__img" src="img/advantage-clock@1x.png" alt="изображение будильника" width="35" height="35">
+          <div class="work-list__img">
+            <img src="img/advantage-clock@1x.png" alt="изображение будильника" width="35" height="35">
+          </div>
           <p class="work-list__description">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </p>
@@ -148,24 +160,29 @@
       </p>
 
       <div class="example__wrapper">
-
-        <lable class="example__kg">
+        <fieldset>
+        <legend  class="example__kg">
+          снижение веса
+        </legend>
         <input class="example__kg-lower" type="text" value="5 КГ">
-        </lable>
 
-        <lable class="example__day">
-        <input class="example__spent-day" type="text" value="60 дней">
-        </lable>
-
+        </fieldset>
+        <fieldset>
+          <legend class="example__day">
+            затрачено времени
+          </legend>
+          <input class="example__spent-day" type="text" value="60 дней">
+        </fieldset>
+      </div>
       <p class="example__cost">
         Затраты на питание: 15 000 руб.
       </p>
 
-      <img class="example__before" src="img/before-mobile@1x.png" alt="изображение полного кота до примема функционального питания" width="300" height="230">
+      <img  src="img/before-mobile@1x.png" alt="изображение полного кота до примема функционального питания" width="300" height="230">
 
-      <img class="example__after" src="img/after-mobile@1x.png" alt="изображение похудавшего кота после примема функционального питания" width="300" height="230">
+      <img  src="img/after-mobile@1x.png" alt="изображение похудавшего кота после примема функционального питания" width="300" height="230">
 
-      <a class="example__before-after">
+      <a href="#" class="example__before-after">
         <span class="example__status">
         Было
         </span>
@@ -196,11 +213,12 @@
         <p class="adres-list__adres">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
+      </div>
 
         <a class="adres-list__map" href="#">
           <img class="adres-list__map-mini" src="img/bg-map-mobile@1x.png" alt="избражение карты с адресом: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </a>
-      </div>
+
     </section>
 
 
@@ -212,7 +230,7 @@
 
     </a>
     <!--_________________SOCIAL_BUTTONS______________________-->
-    <ul class="page-footer__social-list">
+    <ul class="social">
       <!--_________________SOCIAL_BUTTONS--VK______________________-->
       <li class="social__item">
 

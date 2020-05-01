@@ -1,0 +1,79 @@
+.program {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: $width-mobile;
+}
+
+.program-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.program-select {
+  border-bottom: 1px solid #e6e6e6;
+
+  border-top: 1px solid #e6e6e6;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+//------------------Program_selection_program-user__coment-------------------//
+.program__profile {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.program__lable {
+  margin: 0;
+  padding: 0;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  font-weight: 300;
+  font-size: $font-size-lable;
+  line-height: $font-line-height-lable;
+  text-align: left;
+}
+
+.program__coment {
+  font-family: inherit;
+  font-size: $font-size-profile;
+  line-height: $font-line-height-description;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+//-----------------------------------Pseudo Elements------------------------------//
+//удлинить//
+.program__lable-greenline::after {
+  content: "";
+
+  position: absolute;
+
+  width: 100px;
+  height: 6px;
+
+  margin-left: 20px;
+  padding-left: 40px;
+
+  background-color: rgb(104, 183, 56);
+}
+
+.comment-after::after {
+  content: "";
+
+  width: 150px;
+  height: 6px;
+
+  margin-left: 20px;
+  padding-right: 20px;
+
+  background-color: rgb(104, 183, 56);
+}

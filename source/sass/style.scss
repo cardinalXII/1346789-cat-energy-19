@@ -1,3 +1,33 @@
-.top-header {
-  background-color: gray;
-}
+//Main file of progect//
+
+@import "variabels.scss";
+@import "base.scss";
+//--------header------//
+@import "top-header.scss";
+@import "menu-list.scss";
+//--------content------//
+//--------index----//
+@import "main.scss";
+@import "program-description.scss";
+@import "item.scss";
+@import "work.scss";
+@import "exampel.scss";
+
+//--------catalog------//
+@import "catalog.scss";
+@import "аdditional.scss";
+@import "gift.scss";
+
+//--------program------//
+@import "program.scss";
+@import "header-program.scss";
+@import "profile.scss";
+@import "select.scss";
+@import "add.scss";
+@import "button.scss";
+@import "legend.scss";
+//-------footer----//
+@import "page-footer.scss";
+@import "adres-list.scss";
+@import "social.scss";
+@import "copyright.scss";

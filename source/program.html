@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи - Программа</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet" >
   </head>
   <body>
 
@@ -12,11 +12,11 @@
 
     <!--__________________LOGO_______________________-->
     <a class="top-header__link-index" href="index.html">
-      <img class="top-header__logo" src="img/logo-mobile.svg" width="200" height="45" alt="логотип магазина кэт энерджи">
+      <img src="img/logo-mobile.svg" width="200" height="45" alt="логотип магазина кэт энерджи">
     </a>
 
     <!--__________________MENU_______________________-->
-    <button class="top-header__button  top-header__button--open"></button>
+    <button class="top-header__button  top-header__button--opened"></button>
 
     <ul class="top-header-menu menu-list">
       <li class="menu-list__item"><a href="index.html">Главная</a></li>
@@ -28,35 +28,36 @@
 
 
   <!--____________________________________MAIN__________________________________________-->
-  <main class="page-main">
+  <main class="program">
   <!--____________________________________Program_selection__________________________________________-->
-  <form class="data-user" method="post" action="https://echo.htmlacademy.ru">
+  <form class="program-user" method="post" action="https://echo.htmlacademy.ru">
 
   <!--____________________________________Program_selection_program__anketa______________________________________-->
-  <section class="program__anketa">
-    <h1 class="header__title-program">Подбор программы</h1>
+  <section class="header-program">
+    <h1 class="header-program__title">Подбор программы</h1>
 
-    <p class="anketa-program--description">
+    <p class="header-program__description">
       Заполните анкету и мы подберем программу питания для вашего кота
     </p>
 
-    <ul class="anketa">
+    <ul class="profile">
 
-      <li class="anketa-user">
-        <lable class="anketa__user--lable">Имя:<sup>*</sup>
-          <input class="anketa__user--value" type="text" placeholder="Барсик" name="Имя:">
+      <li class="profile__user">
+
+        <lable class="profile__lable">Имя:<sup>*</sup>
+          <input class="profile__value" type="text" placeholder="Барсик" name="Имя:">
         </lable>
       </li>
 
-      <li class="anketa-user">
-        <label class="anketa__user--lable">Вес (кг):<sup>*</sup>
-          <input class="anketa__user-value" type="text" placeholder="7" name="Вес (кг):">
+      <li class="profile__user">
+        <label class="profile__lable">Вес (кг):<sup>*</sup>
+          <input class="profile__value" type="text" placeholder="7" name="Вес (кг):">
         </label>
       </li>
 
-      <li class="anketa-user">
-        <label class="anketa__user--lable">Возраст (лет):
-          <input class="anketa__user-value" type="text" placeholder="7" name="Возраст (лет):">
+      <li class="profile__user">
+        <label class="profile__lable">Возраст (лет):
+          <input class="profile__value" type="text" placeholder="7" name="Возраст (лет):">
         </label>
       </li>
     </ul>
@@ -67,23 +68,23 @@
 
     <ul class="select">
 
-      <li class="select__slim">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="radio" name="select__program" checked>
+      <li class="select__value">
+        <lable class="select__lable">
+        <input class="select__radio" type="radio" name="select__program" checked>
           Похудение
         </lable>
       </li>
 
-      <li class="select__slim">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="radio" name="select__program">
+      <li class="select__value">
+        <lable class="select__lable">
+        <input class="select__radio" type="radio" name="select__program">
           Набор массы
         </lable>
       </li>
 
-      <li class="select__slim">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="radio" name="select__program">
+      <li class="select__value">
+        <lable class="select__lable">
+        <input class="select__radio" type="radio" name="select__program">
           Не знаю (Нужен ваш совет)
         </lable>
       </li>
@@ -91,82 +92,86 @@
   </section>
 
   <!--____________________________________Program_selection_program-user__contact________________________________-->
-  <section class="program__anketa">
+  <section class="program__profile">
 
-    <div class="header">
-      <h2 class="program__anketa--title">Контактные данные(владельца кота)</h2>
-    </div>
+    <h2 class="program__lable  program__lable-greenline">Контактные данные(владельца кота)</h2>
 
-    <ul class="anketa">
+    <ul class="profile">
 
-      <li class="anketa-user">
-        <lable class="anketa__user--lable">E-mail:<sup>*</sup>
-          <input class="anketa__user--value" type="text" placeholder="kuklachev@gmail.com" name="E-mail:">
-          <img src="img/icon-mail.svg" width="20" height="15">
+      <li class="profile__user">
+
+        <lable class="profile__lable">E-mail:<sup>*</sup>
+          <input class="profile__value profile__value--icon" type="text" placeholder="kuklachev@gmail.com" name="E-mail:">
         </lable>
+
+        <div class="profile__img">
+          <img src="img/icon-mail.svg" width="20" height="20">
+        </div>
+
       </li>
 
-      <li class="anketa-user">
-        <lable class="anketa__user--lable">Телефон:<sup>*</sup>
-          <input class="anketa__user--value" type="text" placeholder="8 (960) 900-60-90" name="Телефон:">
+      <li class="profile__user">
+
+        <lable class="profile__lable">Телефон:<sup>*</sup>
+          <input class="profile__value profile__value--icon" type="text" placeholder="8 (960) 900-60-90" name="Телефон:">
+        </lable>
+
+        <div class="profile__img">
           <img src="img/icon-phone.svg" width="20" height="20">
-        </lable>
+        </div>
+
       </li>
+
     </ul>
   </section>
 
   <!--____________________________________Program_selection_program-user__coment________________________________-->
-  <section class="program__anketa">
+  <section class="program__profile">
 
-    <div class="header">
-      <h2 class="program__anketa--title">Комментарий</h2>
-    </div>
+    <h2 class="program__lable comment-after">Комментарий</h2>
 
-    <textarea class="program__coment--area" name="coment" rows="7">Расскажите обо всех повадках кота </textarea>
+    <textarea class="program__coment" name="coment" rows="7">Расскажите обо всех повадках кота </textarea>
   </section>
 
   <!--____________________________________Program_selection_program-user__Additionally__________________________-->
-  <section class="program__anketa">
+  <section class="program__profile">
 
-    <div class="header">
-      <h2 class="program__anketa--title">Дополнительно</h2>
-    </div>
+    <h2 class="program__lable add-after">Дополнительно</h2>
 
-    <ul class="select">
+    <ul class="add">
 
-      <li class="select__sweetener">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="checkbox" name="sweetener" checked>
+      <li class="add__item">
+        <lable class="add__lable">
+        <input class="add__check" type="checkbox" name="sweetener" checked>
           Сахарозаменитель
         </lable>
       </li>
 
-      <li class="select__drinking-water">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="checkbox" name="drinking-water">
+      <li class="add__item">
+        <lable class="add__lable">
+        <input class="add__check" type="checkbox" name="drinking-water">
           Питьевая вода
         </lable>
       </li>
 
-      <li class="select__milk">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="checkbox" name="milk">
+      <li class="add__item">
+        <lable class="add__lable">
+        <input class="add__check" type="checkbox" name="milk">
           Молоко
         </lable>
       </li>
 
-      <li class="select__vitamins">
-        <lable class="select__slim--lable">
-        <input class="select__slim--radio" type="checkbox" name="vitamins">
+      <li class="add__item">
+        <lable class="add__lable">
+        <input class="add__check" type="checkbox" name="vitamins">
           Витамины
         </lable>
       </li>
     </ul>
   </section>
 
-  <section class="form-button">
-    <input class="button  button__name" type="submit" value="Отправить заявку">
-  </section>
+    <input class="button  button--name" type="submit" value="Отправить заявку">
+
   </form>
 
   <small class="legend">
@@ -192,11 +197,11 @@
         <p class="adres-list__adres">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
-
+      </div>
         <a class="adres-list__map" href="#">
           <img class="adres-list__map-mini" src="img/bg-map-mobile@1x.png" alt="избражение карты с адресом: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </a>
-      </div>
+
     </section>
 
     <a class="page-footer__logo" href="#">
@@ -207,7 +212,7 @@
     </a>
 
     <!--_________________SOCIAL_BUTTONS______________________-->
-    <ul class="page-footer__social-list">
+    <ul class="social">
       <!--_________________SOCIAL_BUTTONS--VK______________________-->
       <li class="social__item">
 

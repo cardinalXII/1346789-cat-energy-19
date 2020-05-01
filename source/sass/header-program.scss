@@ -1,0 +1,18 @@
+.header-program {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-program__title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: $font-size-title;
+  line-height: $font-line-height-title;
+  text-align: left;
+}
+
+.header-program__description {
+  text-transform: uppercase;
+}

@@ -1,0 +1,11 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px;
+}
+
+.copyright-title {
+  font-size: $font-size-main;
+  line-height: $font-line-height-copyright;
+  color: $font-color;
+}

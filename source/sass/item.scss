@@ -1,0 +1,54 @@
+.item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+//оцентровать изображение//
+.item-header__img {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  background-color: $color-button;
+  border-radius: 50%;
+
+  padding: 20px;
+  margin: 25px;
+}
+//выяснить что делает//
+.item-header__img img {
+  position: absolute;
+  top: -2px;
+  right: 1px;
+}
+
+.item-tagline {
+  font-size: $font-size-taglain;
+  line-height: $font-line-height-tagline;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+//описание программ//
+.item-description {
+  font-family: $font;
+  font-size: $font-size-button;
+  line-height: $font-line-height-medium;
+  text-align: left;
+
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+//нижние ссылки в каталог//
+.item-link {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.item-link__right-arrow img {
+  margin-left: 10px;
+}

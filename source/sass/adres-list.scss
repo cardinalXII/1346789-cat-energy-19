@@ -1,0 +1,23 @@
+.adres-list {
+  background-color: rgb(255, 255, 255);
+}
+
+.adres-list__header {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 20px;
+}
+
+.adres-list__titel {
+  font-size: $font-size-main;
+  line-height: $font-line-height;
+  text-transform: uppercase;
+}
+
+.adres-list__adres {
+  width: 190px;
+  font-size: $font-size-adres;
+  line-height: $font-line-height;
+  font-weight: 300;
+}
