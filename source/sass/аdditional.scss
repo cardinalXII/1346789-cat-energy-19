@@ -5,9 +5,11 @@
   padding-right: 20px;
 }
 
-.аdditional-header {
+.аdditional__header {
+  display: flex;
   margin: 0;
   padding: 18px 0;
+  align-items: center;
 
   font-size: 24px;
   font-weight: 300;
@@ -16,11 +18,12 @@
 
   &::after {
     content: "";
-
     position: absolute;
 
     width: 55px;
     height: 6px;
+
+    margin-left: 240px;
 
     background-color: rgb(104, 183, 56);
   }

@@ -55,10 +55,11 @@
     background-color: $color-button-down;
     color: rgb(153, 198, 132);
   }
-}
-//название кнопки//
-.button-lable {
-  font-size: $font-size-button;
-  line-height: $font-line-height-medium;
-  text-transform: uppercase;
+
+  //название кнопки//
+  &--lable {
+    font-size: $font-size-button;
+    line-height: $font-line-height-medium;
+    text-transform: uppercase;
+  }
 }

@@ -6,12 +6,12 @@
   width: $width-mobile;
 }
 
-.program-user {
+.program__user {
   display: flex;
   flex-direction: column;
 }
 
-.program-select {
+.program__select {
   border-bottom: 1px solid #e6e6e6;
 
   border-top: 1px solid #e6e6e6;
@@ -66,7 +66,7 @@
   background-color: rgb(104, 183, 56);
 }
 
-.comment-after::after {
+.program__lable--comment-after::after {
   content: "";
 
   width: 150px;
