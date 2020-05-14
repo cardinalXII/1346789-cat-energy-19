@@ -6,12 +6,32 @@
 
   padding: 25px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .menu-list__item {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(230, 230, 230,);
+
+    padding: 25px 10px;
+  }
+}
+
 //кнопки навигации СТИЛИСТИКА//
 .menu-list__item a {
   font-size: $tex-menu-size;
   text-decoration: none;
   text-transform: $tex-menu-transform;
   color: opacify($text-menu-color, 1);
+}
+
+@media (min-width: $tablet-width) {
+  .menu-list__item a {
+    font-size: $tex-menu-size-tablet;
+    text-transform: $tex-menu-transform;
+    color: opacify($text-menu-color, 1);
+    text-decoration: none;
+  }
 }
 
 .menu-list__item a:hover {

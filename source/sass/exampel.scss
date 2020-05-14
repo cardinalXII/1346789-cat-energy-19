@@ -1,4 +1,5 @@
-//Раздел Живой пример//
+//_______________________Section Live Example_______________________//
+//_______________________header_______________________//
 .example__title {
   margin: 0;
   padding: 0;
@@ -10,6 +11,18 @@
   text-align: left;
 }
 
+@media (min-width: $tablet-width) {
+  .example__title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 300;
+    text-align: left;
+  }
+}
+//_______________________desription section_______________________//
 .example__description {
   text-align: left;
   font-family: $font;
@@ -21,16 +34,45 @@
   padding-left: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .example__description {
+    width: 677px;
+    text-align: left;
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+
+    padding: 0;
+    margin-bottom: 60px;
+    margin-top: 70px;
+  }
+}
+//--------------------wrapper of spent resources--------------------//
 .example__wrapper {
+  width: 280px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   padding-right: 20px;
   padding-left: 20px;
-  transform: rotatex(180deg);
+  transform: rotateX(180deg);
 }
 
-// сместить вниз название окон вес и время//
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    transform: rotateX(180deg);
+    padding: 0;
+    margin: 0;
+  }
+}
+//--------------------formatting the bottom text in wrapper-------------------//
 .example__kg,
 .example__day {
   width: 55px;
@@ -42,9 +84,23 @@
   font-size: 12px;
   line-height: 12px;
 
-  transform: rotatex(-180deg);
+  transform: rotateX(-180deg);
 }
 
+@media (min-width: $tablet-width) {
+  .example__kg,
+  .example__day {
+    width: 100%;
+    padding: 0 5px;
+
+    font-family: $font;
+    font-size: 14px;
+    line-height: 14px;
+
+    transform: rotateX(-180deg);
+  }
+}
+//--------------------formatting indicators of resources spent-------------------//
 .example__spent {
   display: inline-block;
   width: 100px;
@@ -59,29 +115,130 @@
   line-height: 24px;
   text-transform: uppercase;
 
-  transform: rotatex(180deg);
+  transform: rotateX(180deg);
 }
 
+@media (min-width: $tablet-width) {
+  .example__spent {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 0 20px;
+    margin: 0;
+
+    border: none;
+
+    text-align: center;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example__field {
+  order: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .example__field {
+    order: 1;
+    margin-right: 40px;
+  }
+}
+//--------------------formatting indicators of cost spent-------------------//
 .example__cost {
+  flex-grow: 1;
   text-align: center;
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
   text-transform: uppercase;
+  transform: rotateX(180deg);
 }
 
+@media (min-width: $tablet-width) {
+  .example__cost {
+    width: 175px;
+    flex-grow: 0;
+    order: 3;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+    transform: rotateX(180deg);
+    margin-left: 120px;
+  }
+}
+//____________________________________Block Before/After__________________________________________//
+//----------------------------------picture-----------------//
+@media (min-width: $tablet-width) {
+  .example__img-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example__img-before {
+    width: 320px;
+    position: relative;
+    left: 10px;
+    top: -80px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example__img-after {
+    width: 320px;
+    position: relative;
+    left: 10px;
+    top: -80px;
+  }
+}
+
+//-------------------------the switching unit was----------------------//
 .example__before-after {
   display: flex;
   justify-content: center;
   align-items: baseline;
 }
 
+@media (min-width: $tablet-width) {
+  .example__before-after {
+    margin-top: -80px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+//-------------------------Lable before after----//
+
+.example__link {
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .example__link {
+    border-bottom: dotted;
+  }
+}
+
 .example__status {
   text-transform: uppercase;
-  display: flex;
-  }
+}
 
-//разобраться с позиционированием ползунка//
+@media (min-width: $tablet-width) {
+  .example__status {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+//-------------------------switcher-------------------------//
 .example__scale {
   display: flex;
   justify-content: space-between;
@@ -97,7 +254,7 @@
 
   text-align: center;
 
-  &--togle-before{
+  &--togle-before {
     position: absolute;
     width: 35px;
     height: 7px;
@@ -106,7 +263,8 @@
     background-color: green;
   }
 
-  &--togle-after{
+  &--togle-after {
+    visibility: hidden;
     position: absolute;
     width: 35px;
     height: 7px;
@@ -115,5 +273,57 @@
 
     border-radius: 3px;
     background-color: green;
+  }
+  //add green togle when selected after//
+  &--togle-after--visible {
+    visibility: visible;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example__scale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    width: 450px;
+    height: 8px;
+    padding: 3px;
+
+    background-color: #dcdcdc;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+
+    margin-left: 25px;
+    margin-right: 25px;
+    //----------------------Circle---------------//
+    &--togle-before {
+      position: relative;
+      width: 35px;
+      height: 35px;
+
+      margin: 0;
+
+      left: 206px;
+
+      border-radius: 50%;
+      border-color: #dedede;
+      background-color: white;
+    }
+
+    &--togle-after {
+      visibility: visible;
+      position: relative;
+      width: 10px;
+      height: 10px;
+
+      left: -203px;
+
+      margin: 10px;
+
+      border-radius: 50%;
+      background-color: green;
+    }
   }
 }

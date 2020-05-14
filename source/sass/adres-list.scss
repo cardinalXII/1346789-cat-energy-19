@@ -1,5 +1,16 @@
+//____________________________begin footer content_____________________//
 .adres-list {
   background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: $tablet-width) {
+  .adres-list {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    flex-shrink: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .adres-list__header {
@@ -9,15 +20,60 @@
   padding: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .adres-list__header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 60px 40px;
+  }
+}
+//-------------------------label------------//
 .adres-list__titel {
   font-size: $font-size-main;
   line-height: $font-line-height;
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .adres-list__titel {
+    width: 160px;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+//-----------------------address----------////
 .adres-list__adres {
   width: 190px;
   font-size: $font-size-adres;
   line-height: $font-line-height;
   font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .adres-list__adres {
+    box-sizing: border-box;
+    font-family: $font;
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    text-align: right;
+    margin: 0;
+  }
+
+  .town {
+    display: inline-block;
+    box-sizing: border-box;
+    padding-top: 30px;
+  }
+  //-------------------settings of map---------//
+  .adres-list__map {
+    display: block;
+    width: 100%;
+    outline: 2px solid blue;
+    position: relative;
+  }
 }

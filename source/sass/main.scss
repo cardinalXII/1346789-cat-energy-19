@@ -11,12 +11,41 @@
   text-align: center;
   background-color: rgb(255, 255, 255);
 }
+
+@media (min-width: $tablet-width) {
+  .main-page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+
+
+    background-color: rgb(255, 255, 255);
+  }
+}
+
 //Хедер главной страницы//
 .main-header {
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: rgb(255, 255, 255);
   padding-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    background-image: none;
+    background-color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0;
+  }
 }
 
 .main-header img {
@@ -30,11 +59,35 @@
   color: $color-text;
 }
 
+@media (min-width: $tablet-width) {
+  .main-header__title {
+
+    width: 430px;
+    font-size: $font-size-header-h1-tablet;
+    line-height: $font-line-height-header-h1-tablet;
+    font-weight: 300;
+    color: $color-text;
+    text-align: left;
+    margin-left: 100px;
+  }
+}
+
 .main-header__tagline {
   font-size: $font-size-p;
   line-height: $font-line-height-header-p;
   color: $color-text;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__tagline {
+    font-size: $font-size-p-tablet;
+    line-height: $font-line-height-header-p;
+    color: $color-text;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 100px;
+  }
 }
 
 .main-header__button {
@@ -61,5 +114,39 @@
     font-size: $font-size-button;
     line-height: $font-line-height-medium;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__button {
+    position: relative;
+    width: 100%;
+    background-color: $color-button;
+    color: $color-text;
+
+    top: -610px;
+    right: 135px;
+
+    padding: 15px 25px;
+
+    text-decoration: none;
+
+    //don't work it//
+    & :hover {
+      background-color: $color-button-hover;
+    }
+
+    & :active {
+      background-color: $color-button-down;
+      color: rgb(153, 198, 132);
+    }
+
+    //название кнопки//
+    &--lable {
+      font-size: $font-size-button-tablet;
+      line-height: $font-line-height-medium-tablet;
+      text-transform: uppercase;
+      color: white;
+    }
   }
 }

@@ -1,7 +1,8 @@
 .button {
+  box-sizing: border-box;
   width: 100%;
   background-color: $color-button;
-
+  color: $color-text;
 
   padding: 15px 0;
 
@@ -18,9 +19,8 @@
   }
 
   &--name {
-    color: $color-text;
     text-transform: uppercase;
-    font-size: 16px;
-    line-height: 20px;
+    text-align: center;
+    color: $color-text-button-order;
   }
 }

@@ -20,17 +20,3 @@
   line-height: $font-line-height-description;
   text-transform: uppercase;
 }
-
-.add-after::after {
-  content: "";
-
-  position: absolute;
-
-  width: 100px;
-  height: 6px;
-
-  margin-left: 25px;
-  padding-right: 10px;
-
-  background-color: rgb(104, 183, 56);
-}

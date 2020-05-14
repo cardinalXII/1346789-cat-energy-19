@@ -1,13 +1,49 @@
 //главный контейнер хедера//
 .top-header {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
   flex-direction: column;
 
   width: $width-mobile;
 
   background: rgb(255, 255, 255);
+}
+
+@media (min-width: $tablet-width) {
+  .top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    width: 768px;
+
+    background: rgb(255, 255, 255);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .top-header {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1440px;
+
+    background: rgb(255, 255, 255);
+  }
 }
 
 .top-header__link-index {
@@ -85,4 +121,19 @@
   margin: 0;
 
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .top-header__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+  }
 }

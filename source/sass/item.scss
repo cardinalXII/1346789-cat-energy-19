@@ -1,7 +1,16 @@
 .item-header {
   display: flex;
-  flex-direction: row;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .item-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 40px;
+  }
 }
 //оцентровать изображение//
 .item-header__img {
@@ -17,8 +26,40 @@
 //выяснить что делает//
 .item-header__img img {
   position: absolute;
-  top: -2px;
+  top: 2px;
   right: 1px;
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .item-header__img {
+    width: 150px;
+    height: 150px;
+
+    background-color: $color-button;
+    border-radius: 50%;
+
+    padding: 0;
+
+    top: 20px;
+
+    order: 2;
+  }
+
+  .item-header__img--slim > img {
+    position: relative;
+    width: 160px;
+    height: 150px;
+    top: -10px;
+  }
+
+  .item-header__img--pro > img {
+    position: relative;
+    width: 270px;
+    height: 160px;
+    top: 0;
+  }
 }
 
 .item-tagline {
@@ -28,6 +69,16 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .item-tagline {
+    font-size: $font-size-taglain-tablet;
+    line-height: $font-line-height-tagline;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+}
 //описание программ//
 .item-description {
   font-family: $font;
@@ -38,6 +89,19 @@
   padding-bottom: 25px;
   border-bottom: 1px solid rgb(217, 217, 217);
 }
+
+@media (min-width: $tablet-width) {
+  .item-description {
+    width: 375px;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
 //нижние ссылки в каталог//
 .item-link {
   display: flex;
@@ -47,6 +111,20 @@
 
   padding-top: 5px;
   padding-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .item-link {
+    height: 50px;
+
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .item-link__right-arrow img {

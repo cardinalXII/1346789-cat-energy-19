@@ -1,12 +1,32 @@
 .social {
   width: 280px;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
 
   border-bottom: 1px solid #e6e6e6;
   border-top: 1px solid #e6e6e6;
 
-  padding: 25px 0;
-  margin: 0;
+  margin-left: 10px;
+  margin-right: 20px;
+  padding: 0;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    display: flex;
+
+    border: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.social__item {
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  margin-left: 30px;
 }

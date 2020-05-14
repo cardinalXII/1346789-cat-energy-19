@@ -1,9 +1,4 @@
 //Раздел Как это работает//
-.work__description {
-  display: flex;
-  flex-direction: column;
-}
-
 .work__title {
   margin: 0;
   padding: 0;
@@ -15,3 +10,13 @@
   text-align: left;
 }
 
+@media (min-width: $tablet-width) {
+  .work__title {
+    padding: 0;
+
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 300;
+    text-align: left;
+  }
+}
