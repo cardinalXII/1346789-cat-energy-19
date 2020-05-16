@@ -15,6 +15,17 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .program-description {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    padding-left: 190px;
+    padding-right: 80px;
+  }
+}
+
 .program-description__item {
   display: flex;
   flex-direction: column;
@@ -35,5 +46,14 @@
 
     padding-bottom: 60px;
     padding-top: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-description__item {
+    box-sizing: border-box;
+    width: 570px;
+    min-height: 370px;
+    margin: 0;
   }
 }

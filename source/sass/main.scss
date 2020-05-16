@@ -30,6 +30,17 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .main-page {
+    box-sizing: border-box;
+    width: 1440px;
+    padding: 0;
+
+    position: relative;
+
+    top: -130px;
+  }
+}
 //Хедер главной страницы//
 .main-header {
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -48,10 +59,24 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .main-header {
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    background-position-x: 740px;
+    background-size: 710px 690px;
+  }
+}
+
 .main-header img {
   padding: 20px 0;
 }
-
+//-------------------------------lable header-------//
 .main-header__title {
   font-size: $font-size-header-h1;
   line-height: $font-line-height-header-h1;
@@ -61,7 +86,6 @@
 
 @media (min-width: $tablet-width) {
   .main-header__title {
-
     width: 430px;
     font-size: $font-size-header-h1-tablet;
     line-height: $font-line-height-header-h1-tablet;
@@ -72,6 +96,15 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .main-header__title {
+    box-sizing: content-box;
+    margin-top: 225px;
+    flex-shrink: 1;
+    margin-left: 190px;
+  }
+}
+//------------------------------------description header---------//
 .main-header__tagline {
   font-size: $font-size-p;
   line-height: $font-line-height-header-p;
@@ -90,6 +123,24 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .main-header__tagline {
+    box-sizing: content-box;
+    margin-top: 5px;
+    flex-shrink: 1;
+    margin-left: 190px;
+  }
+}
+//--------------------------------------picture os box with kitchen------//
+@media (min-width: $desktop-width) {
+  .main-header__picture {
+    position: relative;
+
+    top: -300px;
+    left: 140px;
+  }
+}
+//-----------------------------------------green button-----------//
 .main-header__button {
   width: 100%;
   background-color: $color-button;
@@ -126,6 +177,40 @@
 
     top: -610px;
     right: 135px;
+
+    padding: 15px 25px;
+
+    text-decoration: none;
+
+    //don't work it//
+    & :hover {
+      background-color: $color-button-hover;
+    }
+
+    & :active {
+      background-color: $color-button-down;
+      color: rgb(153, 198, 132);
+    }
+
+    //название кнопки//
+    &--lable {
+      font-size: $font-size-button-tablet;
+      line-height: $font-line-height-medium-tablet;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__button {
+    position: relative;
+    width: 250px;
+    background-color: $color-button;
+    color: $color-text;
+
+    top: -500px;
+    left: 190px;
 
     padding: 15px 25px;
 

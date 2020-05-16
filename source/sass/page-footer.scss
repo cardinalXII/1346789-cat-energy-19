@@ -13,7 +13,6 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     box-sizing: border-box;
-    outline: 2px solid green;
     width: 768px;
     display: flex;
     flex-direction: row;
@@ -25,6 +24,16 @@
     margin-right: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    outline: 2px solid green;
+    box-sizing: border-box;
+    width: 1440px;
+    height: 550px;
+  }
+}
+
 //------------------------wrapper of bottom footer---------//
 .page-footer__bottom {
   display: flex;
@@ -33,13 +42,20 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__bottom {
-    outline: 2px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
     flex-grow: 1;
     padding: 60px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__bottom {
+    box-sizing: border-box;
+    position: relative;
+    top: -300px;
   }
 }
 

@@ -20,3 +20,10 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .work {
+    padding-left: 190px;
+    margin-top: 80px;
+  }
+}

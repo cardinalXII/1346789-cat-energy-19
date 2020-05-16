@@ -13,6 +13,21 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .adres-list {
+    box-sizing: border-box;
+    width: 570px;
+    height: 200px;
+    padding: 0;
+
+    position: relative;
+
+    top: -35px;
+    left: 109px;
+    z-index: 1;
+  }
+}
+
 .adres-list__header {
   display: flex;
   justify-content: space-around;
@@ -73,7 +88,13 @@
   .adres-list__map {
     display: block;
     width: 100%;
-    outline: 2px solid blue;
     position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .adres-list__map {
+    position: relative;
+    top: -330px;
   }
 }

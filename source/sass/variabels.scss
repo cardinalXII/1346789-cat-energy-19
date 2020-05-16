@@ -1,10 +1,10 @@
 $width-mobile: 320px;
-$tablet-width: 769px;
+$tablet-width: 768px;
 $desktop-width: 1200px;
 
 $color-text: rgb(255, 255, 255);
 $font: arial;
-$font-body: "Oswald", sans-serif, serif;
+$font-body: "Oswald", serif, sans-serif;
 $font-size-adres: 14px;
 $font-size-body: 14px;
 $font-size-main: 16px;
@@ -41,6 +41,7 @@ $line-height-td:16px;
 
 $color-text: #ffffff;
 $text-menu-color: rgba(0, 0, 0, 0);
+$text-menu-color-desktop: rgba(255, 255, 255, 0);
 $tex-menu-size: 20px;
 $tex-menu-size-tablet: 18px;
 $tex-menu-transform: uppercase;

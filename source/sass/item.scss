@@ -12,7 +12,14 @@
     height: 40px;
   }
 }
-//оцентровать изображение//
+
+@media (min-width: $desktop-width) {
+  .item-header {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
 .item-header__img {
   width: 10px;
   height: 10px;
@@ -23,7 +30,7 @@
   padding: 20px;
   margin: 25px;
 }
-//выяснить что делает//
+
 .item-header__img img {
   position: absolute;
   top: 2px;
@@ -62,6 +69,38 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .item-header__img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+    top: -15px;
+    right: 18px;
+    background-color: $color-button;
+    border-radius: 50%;
+    padding: 0;
+    order: 1;
+    margin-top: 45px;
+    margin-left: 50px;
+  }
+
+  .item-header__img--slim > img {
+    position: relative;
+    width: 120px;
+    height: 95px;
+    top: -4px;
+  }
+
+  .item-header__img--pro > img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -40px;
+    right: 0;
+  }
+}
+
 .item-tagline {
   font-size: $font-size-taglain;
   line-height: $font-line-height-tagline;
@@ -77,6 +116,14 @@
     text-transform: uppercase;
     margin-bottom: 30px;
     margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .item-tagline {
+    order: 2;
+    margin: 0;
+    padding: 0;
   }
 }
 //описание программ//
@@ -102,6 +149,14 @@
     border-bottom: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .item-description {
+    width: 450px;
+    padding-left: 50px;
+    margin-top: 80px;
+  }
+}
 //нижние ссылки в каталог//
 .item-link {
   display: flex;
@@ -124,6 +179,14 @@
     text-decoration: none;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .item-link {
+    padding: 0;
+    margin: 0;
+    margin-left: 50px;
   }
 }
 

@@ -7,10 +7,6 @@
   </head>
   <body>
 
-
-
-
-
   <!--____________________________________HEADER_________________________________________-->
   <header class="top-header">
 
@@ -25,7 +21,7 @@
     </a>
 
     <!--__________________MENU_______________________-->
-    <button class="top-header__button  top-header__button--closed"></button>
+    <button class="top-header__button  top-header__button--opened"></button>
 
     <ul class="top-header__menu menu-list">
       <li class="menu-list__item"><a>Главная</a></li>
@@ -33,9 +29,6 @@
       <li class="menu-list__item"><a href="program.html">Подбор программы</a></li>
     </ul>
   </header>
-
-
-
 
   <!--____________________________________MAIN__________________________________________-->
   <main class="main-page">
@@ -47,7 +40,7 @@
       <h1 class="main-header__title"> Функциональное питание для котов</h1>
 
       <p class="main-header__tagline"> Занялся собой? Займись котом!</p>
-      <picture>
+      <picture class="main-header__picture">
         <source media="(min-width:1200px)" srcset="img/index-can-desktop@1x.png">
         <source media="(min-width:768px)" srcset="img/index-can-tablet@1x.jpg">
         <img src="img/index-can-mobile@1x.png">
@@ -182,7 +175,7 @@
         </fieldset>
 
         <p class="example__cost">
-          Затраты на питание: 15 000 руб.
+          Затраты на питание: <span class="example__cost--desktop">15 000 руб</span>.
         </p>
       </div>
 
