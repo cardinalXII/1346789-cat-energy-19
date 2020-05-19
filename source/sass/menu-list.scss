@@ -46,22 +46,22 @@
 }
 
 @media (min-width: $desktop-width) {
-  .menu-list__item a {
+  .menu-list__item--index a {
     font-size: 20px;
     text-transform: 25px;
     color: opacify($text-menu-color-desktop, 1);
     text-decoration: none;
   }
 
-  .menu-list__item a:hover {
+  .menu-list__item--index a:hover {
     color: opacify($text-menu-color, 0.5);
   }
 
-  .menu-list__item a:focus {
+  .menu-list__item--index a:focus {
     color: opacify($text-menu-color, 0.1);
   }
 
-  .menu-list__item a:active {
+  .menu-list__item--index a:active {
     border-bottom: 1px solid white;
     border-bottom-margin-top: 10px;
 
