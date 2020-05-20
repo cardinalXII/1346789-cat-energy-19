@@ -12,6 +12,16 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .select {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 //сделать отступ от круга//
 .select__radio {
   padding-left: 20px;
@@ -29,10 +39,26 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .select__value {
+    &:nth-child(2) {
+      margin-bottom: 35px;
+      margin-top: 35px;
+    }
+  }
+}
+
 .select__lable {
   font-weight: 400;
   font-size: $font-size-profile;
   line-height: $font-line-height-description;
 
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .select__lable {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

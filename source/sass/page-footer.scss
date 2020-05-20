@@ -27,7 +27,6 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    outline: 2px solid green;
     box-sizing: border-box;
     width: 1440px;
     height: 550px;
@@ -53,6 +52,12 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__bottom {
+    box-sizing: border-box;
+    position: relative;
+    top: -205px;
+  }
+
+  .page-footer__bottom--index {
     box-sizing: border-box;
     position: relative;
     top: -300px;

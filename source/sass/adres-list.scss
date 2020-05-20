@@ -1,20 +1,30 @@
 //____________________________begin footer content_____________________//
 .adres-list {
-  background-color: rgb(255, 255, 255);
+  background-color: #f2f2f2;
 }
 
 @media (min-width: $tablet-width) {
   .adres-list {
     width: 100%;
     background-color: rgb(255, 255, 255);
-    flex-shrink: 1;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .adres-list {
+    box-sizing: border-box;
+    width: 570px;
+    height: 200px;
+    padding: 0;
+
+    position: relative;
+
+    top: 95px;
+    left: 110px;
+    z-index: 1;
+  }
+
+  .adres-list--index {
     box-sizing: border-box;
     width: 570px;
     height: 200px;
@@ -30,9 +40,8 @@
 
 .adres-list__header {
   display: flex;
-  justify-content: space-around;
-
-  padding: 20px;
+  padding: 30px 0;
+  background-color: #f2f2f2;
 }
 
 @media (min-width: $tablet-width) {
@@ -40,19 +49,23 @@
     display: flex;
     justify-content: space-between;
 
-    padding: 60px 40px;
+    margin: 0;
+    padding: 60px 70px;
   }
 }
 //-------------------------label------------//
 .adres-list__titel {
+  width: 140px;
   font-size: $font-size-main;
   line-height: $font-line-height;
   text-transform: uppercase;
+  margin: 0;
+  margin-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .adres-list__titel {
-    width: 160px;
+    width: 202px;
     font-size: 20px;
     line-height: 25px;
     text-transform: uppercase;
@@ -61,10 +74,14 @@
 }
 //-----------------------address----------////
 .adres-list__adres {
-  width: 190px;
+  width: 140px;
+  font-family: $font;
   font-size: $font-size-adres;
   line-height: $font-line-height;
+  text-align: left;
   font-weight: 300;
+  margin: 0;
+  margin-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -94,6 +111,11 @@
 
 @media (min-width: $desktop-width) {
   .adres-list__map {
+    position: relative;
+    top: -200px;
+  }
+
+  .adres-list__map--index {
     position: relative;
     top: -330px;
   }

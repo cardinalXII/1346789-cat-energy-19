@@ -8,6 +8,14 @@
   list-style: none;
 }
 
+@media (min-width: $tablet-width) {
+  .add {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .add__item {
   display: flex;
   flex-direction: column;
@@ -15,8 +23,34 @@
   margin-bottom: 15px;
 }
 
+@media (min-width: $tablet-width) {
+  .add__item {
+    width: 225px;
+    margin-right: 125px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add__item {
+    width: 200px;
+    margin-right: 80px;
+
+    &:nth-child(1) {
+      margin-left: 40px;
+    }
+  }
+}
+
 .add__lable {
   font-size: $font-size-profile;
   line-height: $font-line-height-description;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .add__lable {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -5,6 +5,7 @@
   color: $color-text;
 
   padding: 15px 0;
+  margin-bottom: 20px;
 
   text-decoration: none;
 
@@ -22,5 +23,18 @@
     text-transform: uppercase;
     text-align: center;
     color: $color-text-button-order;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 280px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 570px;
   }
 }

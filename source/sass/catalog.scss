@@ -1,4 +1,4 @@
-
+//--------------------------Main container-----------//
 .catalog {
   display: flex;
   flex-direction: column;
@@ -7,56 +7,257 @@
   width: $width-mobile;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+  }
+}
+//---------------------------header of main container------//
 .catalog__header {
   margin: 0;
   padding: 30px 20px;
   text-align: left;
   font-size: $font-size-header;
   line-height: $line-height-header;
-  font-weight: 300;
+  font-weight: 400;
   border-bottom: 1px solid #e6e6e6;
   border-top: 1px solid #e6e6e6;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog__header {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    padding-top: 60px;
+    padding-bottom: 160px;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__header {
+    padding-left: 110px;
+  }
+}
+//--------------------------holder of items-------------------//
 .catalog__items {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__items {
+    padding-left: 110px;
+    padding-right: 65px;
+  }
+}
+//------------------------------------items------//
 .catalog__item {
+  box-sizing: border-box;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   border-top: 1px solid #e6e6e6;
+
+  &:nth-last-child(1) {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 25px;
+  }
 }
 
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    box-sizing: border-box;
+    width: 325px;
+    height: 435px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    margin-bottom: 130px;
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-bottom: 40px;
+    background-color: #f2f2f2;
+
+    &:nth-last-child(1) {
+      outline: 1px solid #e6e6e6;
+      background-color: #ffffff;
+      padding: 0;
+    }
+
+    &:nth-last-child(-n+2) {
+      margin: 0;
+      margin-bottom: 70px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    width: 245px;
+    margin-right: 80px;
+
+    &:nth-last-child(-n+4) {
+      margin: 0;
+      margin-right: 80px;
+      margin-bottom: 70px;
+    }
+
+    &:nth-child(4n+4) {
+      margin-right: 0;
+    }
+  }
+}
+//-------------------------picture item------//
 .catalog__img {
-  padding: 20px;
-  margin: 0;
+  width: 140px;
+  height: 145px;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog__img {
+    width: 165px;
+    height: 120px;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    top: -50px;
+  }
+}
+//--------------------------feature table-----//
 .catalog__table {
-  padding: 20px 0;
+  box-sizing: border-box;
+  display: table;
+  width: 140px;
+  margin-top: 25px;
+}
+
+.catalog__row-header {
+  display: table-caption;
+  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  margin-right: 60px;
+  padding-bottom: 10px;
+}
+
+.catalog__row {
+  display: table-row;
   font-family: $font;
+  font-size: 12px;
+  line-height: 16px;
+}
 
-  & th {
-    font-size: $font-size-table;
-    line-height: $line-height-table;
-  }
+.catalog__cell {
+  display: table-cell;
 
-  & td {
-    font-size: $font-size-td;
-    line-height: $line-height-td;
+  &:nth-child(2n) {
+    text-align: right;
   }
 }
 
-//поправить кнопку//
+@media (min-width: $tablet-width) {
+  .catalog__table {
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .catalog__row-header {
+    display: table-caption;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-bottom: 20px;
+  }
+
+  .catalog__row {
+    display: table-row;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 20px;
+  }
+
+  .catalog__cell {
+    display: table-cell;
+    font-family: $font;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+
+    &:nth-child(2n) {
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__table {
+    width: 175px;
+    padding-bottom: 35px;
+  }
+
+  .catalog__row-header {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+//--------------------------------order button-----//
 .catalog__button {
-  width: 100%;
+  width: 280px;
   background-color: $color-button;
   color: $color-text;
 
-  padding: 15px 0;
+  padding: 10px 0;
+  margin-left: 20px;
+  margin-bottom: 25px;
 
   text-decoration: none;
 
@@ -65,7 +266,7 @@
     background-color: $color-button-hover;
   }
 
-  & :active {
+  & :focus {
     background-color: $color-button-down;
     color: rgb(153, 198, 132);
   }
@@ -75,16 +276,72 @@
     text-align: center;
     color: $color-text-button-order;
   }
+
+  &--add {
+    padding: 10px 0;
+    margin: 0;
+  }
 }
 
-.catalog__all {
-  padding-left: 45px;
+@media (min-width: $tablet-width) {
+  .catalog__button {
+    width: 100%;
+    background-color: $color-button;
+    color: $color-text;
+    margin: 0;
+
+    & :hover {
+      background-color: $color-button-hover;
+    }
+
+    & :focus {
+      background-color: $color-button-down;
+      color: rgb(153, 198, 132);
+    }
+
+    &--name {
+      text-transform: uppercase;
+      text-align: center;
+      color: $color-text-button-order;
+    }
+
+    &--add {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__button {
+    &--add {
+      margin-bottom: 0;
+      width: 245px;
+    }
+  }
+}
+//------------------------------picture of plus or more items-----//
+.catalog__wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
 }
 
 .catalog__img-plus {
-  padding-left: 80px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  width: 100%;
+  flex-grow: 1;
+  text-align: center;
+  padding: 25px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__img-plus {
+    height: auto;
+    padding: 55px 0;
+  }
 }
 
 .catalog__all-title {
@@ -95,7 +352,29 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  text-align: left;
+  flex-grow: 1;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__all-title {
+    width: 140px;
+    margin: 0;
+    margin-left: 93px;
+    margin-bottom: 30px;
+    padding: 0;
+
+    flex-grow: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__all-title {
+    margin-left: 55px;
+  }
 }
 
 .catalog__all-tagline {
@@ -105,15 +384,39 @@
 
   font-family: $font;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 16px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__all-tagline {
+    width: 170px;
+    margin: 0;
+    margin-left: 80px;
+    margin-bottom: 106px;
+    padding: 0;
+
+    flex-grow: 0;
+
+    font-size: 16px;
+    line-height: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__all-tagline {
+    margin-left: 38px;
+  }
 }
 
 .catalog__button-all {
-  width: 100%;
+  width: 280px;
   background-color: $color-button-item;
 
-  padding: 15px 0;
+  margin-left: 20px;
+  padding: 10px 0;
 
   text-decoration: none;
 
@@ -123,5 +426,14 @@
     text-transform: uppercase;
     text-align: center;
     color: $color-text-button-all;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__button-all {
+    width: 100%;
+    margin: 0;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }

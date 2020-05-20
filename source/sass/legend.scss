@@ -3,4 +3,19 @@
   font-size: 14px;
   line-height: 16px;
   color: rgb(68, 68, 68);
+  margin: 0 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .legend {
+    width: 190px;
+    font-size: 16px;
+    margin: -30px 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .legend {
+    margin: -30px 600px;
+  }
 }
