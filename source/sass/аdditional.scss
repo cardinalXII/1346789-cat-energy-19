@@ -229,6 +229,7 @@
     line-height: 20px;
 
     &--units {
+      width: 133px;
       margin-right: 50px;
     }
   }
@@ -237,7 +238,6 @@
 @media (min-width: $desktop-width) {
   .аdditional__description {
     &--units {
-      width: 128px;
       margin: 0;
       margin-right: 110px;
     }

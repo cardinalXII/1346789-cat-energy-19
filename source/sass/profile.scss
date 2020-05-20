@@ -145,12 +145,13 @@
 
   position: relative;
 
-  top: -40px;
+  top: -30px;
   left: 245px;
 }
 
 @media (min-width: $tablet-width) {
   .profile__img {
+    top: -40px;
     left: 590px;
   }
 }
