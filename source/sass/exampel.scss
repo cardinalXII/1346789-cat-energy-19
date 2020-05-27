@@ -1,24 +1,35 @@
 //_______________________Section Live Example_______________________//
 //_______________________header_______________________//
+.example{
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 34px;
+
+}
 .example__title {
+
   margin: 0;
   padding: 0;
   padding-left: 20px;
 
   font-size: $font-size-work-h1;
   line-height: $font-line-height-work-h1;
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
 }
 
 @media (min-width: $tablet-width) {
   .example__title {
+
     margin: 0;
+    margin-top: 23px;
     padding: 0;
+    padding-left: 30px;
 
     font-size: 60px;
     line-height: 60px;
-    font-weight: 300;
     text-align: left;
   }
 }
@@ -32,14 +43,16 @@
 }
 //_______________________desription section_______________________//
 .example__description {
+
   text-align: left;
   font-family: $font;
   font-size: $font-size-p;
   font-weight: 300;
   line-height: $font-line-height-medium;
 
-  padding-right: 35px;
+  padding-right: 30px;
   padding-left: 20px;
+  padding-top: 7px;
 }
 
 @media (min-width: $tablet-width) {
@@ -52,8 +65,9 @@
     line-height: 24px;
 
     padding: 0;
-    margin-bottom: 60px;
-    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-top: 65px;
+    margin-left: 30px;
   }
 }
 
@@ -65,11 +79,13 @@
 }
 //--------------------wrapper of spent resources--------------------//
 .example__wrapper {
+
   width: 280px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
+  margin-top: 10px;
   padding-right: 20px;
   padding-left: 20px;
   transform: rotateX(180deg);
@@ -77,14 +93,17 @@
 
 @media (min-width: $tablet-width) {
   .example__wrapper {
-    width: 100%;
+    box-sizing: border-box;
+    width: 708px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     transform: rotateX(180deg);
     padding: 0;
+    padding-bottom: 21px;
     margin: 0;
+    margin-left: 30px;
   }
 }
 
@@ -98,8 +117,35 @@
   }
 }
 //--------------------formatting the bottom text in wrapper-------------------//
+
+.example__field {
+  box-sizing: border-box;
+  padding-top: 10px;
+  order: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .example__field {
+    order: 1;
+    width: 162px;
+    margin-right: 40px;
+    padding-top: 5px;
+
+    &:nth-child(2){
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__field:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
 .example__kg,
 .example__day {
+
   width: 55px;
   height: 20px;
 
@@ -115,6 +161,7 @@
 @media (min-width: $tablet-width) {
   .example__kg,
   .example__day {
+    outline: 2 px solid yellow;
     width: 100%;
     padding: 0 5px;
 
@@ -132,6 +179,7 @@
   width: 100px;
 
   padding: 0;
+  padding-top: 4px;
   margin: 0;
 
   border: none;
@@ -149,8 +197,9 @@
     width: 100%;
     box-sizing: border-box;
 
-    padding: 0 20px;
+    padding:  0;
     margin: 0;
+    margin-top: 5px;
 
     border: none;
 
@@ -160,22 +209,6 @@
   }
 }
 
-.example__field {
-  order: 1;
-}
-
-@media (min-width: $tablet-width) {
-  .example__field {
-    order: 1;
-    margin-right: 40px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .example__field:nth-child(2) {
-    margin-right: 0;
-  }
-}
 //--------------------formatting indicators of cost spent-------------------//
 .example__cost {
   flex-grow: 1;
@@ -185,20 +218,30 @@
   line-height: 20px;
   text-transform: uppercase;
   transform: rotateX(180deg);
+
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .example__cost {
-    width: 175px;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
     flex-grow: 0;
     order: 3;
     text-align: right;
     font-size: 20px;
-    font-weight: 300;
     line-height: 20px;
     text-transform: uppercase;
     transform: rotateX(180deg);
+    margin: 0;
     margin-left: 120px;
+
+    padding: 0;
+  }
+  .example__price{
+    margin: 0;
+    margin-top: 8px;
   }
 }
 
@@ -219,6 +262,10 @@
 }
 //____________________________________Block Before/After__________________________________________//
 //----------------------------------picture-----------------//
+.example__img-wrapper {
+  margin-top: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .example__img-wrapper {
     display: flex;
@@ -232,7 +279,7 @@
 
 @media (min-width: $desktop-width) {
   .example__img-wrapper {
-    min-height: 450px;
+    min-height: 550px;
     margin: 0;
     margin-top: -200px;
     padding: 0;
@@ -244,10 +291,13 @@
 
 @media (min-width: $tablet-width) {
   .example__img-before {
-    width: 320px;
+
+    width: 685px;
     position: relative;
     left: 10px;
-    top: -80px;
+    top: -75px;
+
+    margin-top: 40px;
   }
 }
 
@@ -272,9 +322,14 @@
 
 //-------------------------the switching unit was----------------------//
 .example__before-after {
+  margin-top: 28px;
   display: flex;
-  justify-content: center;
-  align-items: baseline;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 60px;
+  margin-right: 60px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
@@ -307,6 +362,13 @@
 
 .example__status {
   text-transform: uppercase;
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  &--after{
+    margin: 0;
+    margin-left: 5px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -323,22 +385,23 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-
-  width: 85px;
+  width: 100%;
   height: 15px;
   padding: 3px;
 
+  margin-right: 10px;
+
   border: 1px solid gray;
-  border-radius: 3px;
+  border-radius: 6px;
 
   text-align: center;
 
   &--togle-before {
     position: absolute;
-    width: 35px;
-    height: 7px;
+    width: 40px;
+    height: 5px;
 
-    border-radius: 3px;
+    border-radius: 6px;
     background-color: green;
   }
 

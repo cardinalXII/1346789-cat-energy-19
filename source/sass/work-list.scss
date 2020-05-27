@@ -1,7 +1,12 @@
 .work-list {
+
   list-style: none;
   margin: 0;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+
 }
 
 @media (min-width: $tablet-width) {
@@ -17,6 +22,8 @@
 }
 
 .work-list__item {
+  box-sizing: border-box;
+
   display: flex;
   align-items: center;
 }
@@ -29,7 +36,6 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 70px;
-    margin-bottom: 80px;
 
     &--1 {
       background-image: url("../img/1.png");
@@ -54,35 +60,42 @@
       background-repeat: no-repeat;
       background-position-x: 125px;
     }
+
+    &:nth-child(2n){
+      margin-right: 28px;
+    }
+
+    &:nth-child(-n+2){
+      margin-bottom: 20px;
+    }
+
   }
 }
 
 .work-list__img {
-  width: 60px;
+  width: 140px;
   background: green;
+  margin-right: 23px;
 }
 
 @media (min-width: $tablet-width) {
   .work-list__img {
     box-sizing: border-box;
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     background: green;
-    margin-bottom: 35px;
-    padding: 25px;
+    margin-bottom: 27px;
+    padding: 10px;
   }
 }
 
 .work-list__description {
+  box-sizing: border-box;
   text-align: left;
   font-family: $font;
   font-size: $font-size-p;
-  font-weight: 300;
+  font-weight: 400;
   line-height: $font-line-height-medium;
-
-  padding-right: 20px;
-  padding-left: 15px;
-  margin-left: 10px;
 }
 
 @media (min-width: $tablet-width) {

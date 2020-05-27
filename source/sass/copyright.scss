@@ -1,7 +1,9 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 15px;
 }
 
 @media (min-width: $tablet-width) {

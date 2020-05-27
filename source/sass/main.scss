@@ -1,5 +1,6 @@
 //главный контейнер//
 .main-page {
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   width: $width-mobile;
@@ -14,12 +15,10 @@
 
 @media (min-width: $tablet-width) {
   .main-page {
+    outline: 2px solid red;
     margin-left: auto;
     margin-right: auto;
     width: 768px;
-
-    padding-left: 30px;
-    padding-right: 30px;
 
     display: flex;
     flex-direction: wrap;
@@ -46,16 +45,19 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: rgb(255, 255, 255);
-  padding-bottom: 35px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .main-header {
     background-image: none;
     background-color: rgb(255, 255, 255);
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 25px;
+    padding: 0;
+
+    height: 839px;
   }
 }
 
@@ -74,25 +76,44 @@
 }
 
 .main-header img {
-  padding: 20px 0;
+  padding: 6px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header img {
+  padding: 0;
+}
 }
 //-------------------------------lable header-------//
 .main-header__title {
-  font-size: $font-size-header-h1;
-  line-height: $font-line-height-header-h1;
-  font-weight: 300;
-  color: $color-text;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-top: 27px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  font-size: 36px;
+  line-height: 36px;
+
+  color: white;
 }
 
 @media (min-width: $tablet-width) {
   .main-header__title {
-    width: 430px;
+    box-sizing: content-box;
     font-size: $font-size-header-h1-tablet;
     line-height: $font-line-height-header-h1-tablet;
-    font-weight: 300;
-    color: $color-text;
     text-align: left;
-    margin-left: 100px;
+    color: black;
+
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 86px;
+    margin-right: 100px;
+    padding: 0;
   }
 }
 
@@ -106,20 +127,32 @@
 }
 //------------------------------------description header---------//
 .main-header__tagline {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 22px;
+  padding-left: 5px;
+  padding-right: 5px;
   font-size: $font-size-p;
   line-height: $font-line-height-header-p;
-  color: $color-text;
+  color: white;
   text-transform: uppercase;
+  font-weight: 400;
+
 }
 
 @media (min-width: $tablet-width) {
   .main-header__tagline {
     font-size: $font-size-p-tablet;
     line-height: $font-line-height-header-p;
-    color: $color-text;
     text-transform: uppercase;
     text-align: left;
-    margin-left: 100px;
+    color: black;
+    margin-top: 45px;
+    margin-left: 80px;
   }
 }
 
@@ -135,18 +168,25 @@
 @media (min-width: $desktop-width) {
   .main-header__picture {
     position: relative;
-
     top: -300px;
     left: 140px;
   }
 }
 //-----------------------------------------green button-----------//
 .main-header__button {
-  width: 100%;
+  box-sizing: border-box;
+  display: flex;
   background-color: $color-button;
-  color: $color-text;
+  color: white;
 
-  padding: 15px 70px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -6px;
+
+  padding-left: 70px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+
 
   text-decoration: none;
 
@@ -170,17 +210,22 @@
 
 @media (min-width: $tablet-width) {
   .main-header__button {
+    box-sizing: border-box;
+
     position: relative;
-    width: 100%;
+    width: 245px;
     background-color: $color-button;
-    color: $color-text;
 
-    top: -610px;
-    right: 135px;
-
-    padding: 15px 25px;
+    padding: 0;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    margin: 0;
+    top: -585px;
+    left: 89px;
 
     text-decoration: none;
+
 
     //don't work it//
     & :hover {
